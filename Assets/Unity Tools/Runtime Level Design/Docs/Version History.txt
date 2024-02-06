@@ -1,0 +1,239 @@
+Release 2.3.3
+------------------------------------------------------------------
+[Bug Fix]	  : Fixed bug PrefabLibDB UI bug which was causing the prefabs
+			    to not appear during a build and cause null ref exceptions
+				inside the editor after the first build.
+
+Release 2.3.2
+------------------------------------------------------------------
+[New Feature] : it is now possible to query the surface object for object-2-object snap session
+			    via RTObjectSelection.Get.Object2ObjectSnapSessionSurfaceObject;
+[New Feature] : added RTObjectSelection.SetObjectToObjectSnapMoreControlEnabled;
+[New Feature] : RTUndoRedo now has public Undo/Redo functions;
+[New Feature] : added RTUndoRedo.NumActionGroups property;
+[Bug Fix]	  : Fixed bug in TorusMesh.CreateTorus where the normals of the vertices
+			    weren't calculated correctly.
+
+Release 2.3.1.6
+------------------------------------------------------------------
+[New Feature] : implemented RTObjectSelection.BeginObjectToObjectSnapSession;
+[Bug Fix]	  : fixed null ref exceptions being thrown by the extrude gizmo after deleting 
+				selected objects;
+[Bug Fix]	  : the SelectableLayers property of ObjectSelectionSettings is now used
+				to avoid drawing selection highlights for non-selectable objects;
+
+Release 2.3.1.5
+------------------------------------------------------------------
+[New Feature] : RTObjectSelection.WillBeDeleted handler now accepts a List<GameObject>
+			    parameter which contains a list of all parent objects to be deleted;
+
+Release 2.3.1.4
+------------------------------------------------------------------
+[New Feature] : added support for the new Input System;
+
+Release 2.3.1.3
+------------------------------------------------------------------
+[Bug Fix]	  : fixed bug which was causing scale gizmos to change
+				the sibling index of the objects being scaled;
+
+Release 2.3.1.2
+------------------------------------------------------------------
+[Bug Fix]	  : fixed null ref exception caused when trying to use the multi-select
+			    rectangle after deleting game object using Unity's interface.
+
+Release 2.3.1.1
+------------------------------------------------------------------
+[Bug Fix]	  : fixed Universal Render Pipeline script accidentally attached to
+				camera in demo scene;
+[Bug Fix]	  : fixed null camera ref exception when using URP render pipeline;
+
+Release 2.3.1
+------------------------------------------------------------------
+[Improvement] : when spawning a prefab, the prefab is now projected onto the scene grid instead of
+				being placed below it;
+
+[Bug Fix]	  : fixed bug in SphereTree.RaycastAll which was causing disabled renderers or colliders
+			    to be hit by the ray;
+[Bug Fix]	  : fixed compile error caused by using UnityEngine.Rendering.Universal;
+
+[Removed]	  : removed unnecessary line of code from SphereTreeNode.StackPush;
+
+Release 2.3
+------------------------------------------------------------------
+[New Feature] : implemented prefab name search field for searching prefabs
+			    in the active prefab library;
+
+[Improvement] : Optimized the RTScene::Update_SystemCall function. The client code is now required to call 
+				RTScene.Get.OnGameObjectWillBeDestroyed whenever it destroys a game object and RTMeshDb.Get.OnMeshWillBeDestroyed 
+				if it ever destroys a mesh asset at runtime;
+[Improvement] : optimized the GetAllChildrenAndSelf extension method for the GameObject class;
+[Improvement] : eliminated recursion from SphereTree class;
+[Improvement] : optimized certain functions to avoid allocating lists and instead accept entity lists as output buffers;
+
+[Changes]	  : the 'ScaleConstraintEnabled' and 'MinPositiveScale' properties
+			    of the 'ObjectTransformGizmo' class now start with capital letters
+				for consistency;
+
+[Bug Fix]	  : eliminated stack overflow in SphereTree class;
+
+Release 2.2.1
+------------------------------------------------------------------
+[New Feature] : added 'minPositiveScale' and 'scaleConstraintEnabled'
+				properties to ObjectTransformGizmo;
+
+[Bug Fix]	  : fixed object selection being changed after gizmo drag release;
+[Bug Fix]	  : fixed extruded objects not retaining the original objects' layer;
+
+Release 2.2
+------------------------------------------------------------------
+[New Feature] : added support for URP - there is a limitation: the
+				scene gizmo can not be used with URP.
+
+Release 2.1.6.5
+------------------------------------------------------------------
+[New Feature] : added 'RemoveGizmo' function to the RTGizmosEngine class 
+				to allow the client code to remove gizmos when they are
+				no longer needed.
+
+[Bug Fix]	  : fixed gizmo hover state not updated correctly when moving the mouse cursor
+			    from the gizmo over the UI;
+
+Release 2.1.6.4
+------------------------------------------------------------------
+[Bug Fix]	  : fixed stack overflow exception in SphereTree class;
+[Bug Fix]	  : fixed internal issues with 2D shape and sphere border rendering artifacts;
+
+Release 2.1.6.3
+------------------------------------------------------------------
+[New Feature]  : it is now possible to change the scene gizmo screen size;
+
+[Improvement]  : fixed warnings;
+
+Release 2.1.6.2
+------------------------------------------------------------------
+[Bug Fix]	  : fixed bug which was preventing gizmos from being dragged
+			    for certain camera angles.
+
+Release 2.1.6.1
+------------------------------------------------------------------
+[New Feature] : added visibility toggle for the universal gizmo mid scale cap;
+
+[Bug Fix]	  : fixed bug in 'OnHoverableStateChanged' in the 'GizmoPlaneSidler3D' class;
+[Bug Fix]	  : fixed mappings between gizmo handles and their ids;
+
+Release 2.1.6
+------------------------------------------------------------------
+[New Feature] : it is now possible to show/hide individual extrude gizmo sliders;
+[New Feature] : added 'SetAxesLinesHoverable' function to move and scale gizmos;
+[New Feature] : added 'SetMvAxesLinesHoverable' to universal gizmo;
+[New Feature] : added 'SetMidCapHoverable' to rotation gizmo;
+[New Feature] : added 'SetRtMidCapHoverable' to universal gizmo;
+
+[Bug Fix]	  : Fixed 'RTObjectSelectionGizmos::SetWorkGizmo' bug;
+[Bug Fix]	  : Fixed SphereTreeNode stack overflow exception;
+[Bug Fix]	  : Fixed scale gizmo scaling object incorrectly;
+[Bug Fix]	  : Fixed scale snap step for scale gizmo freeze in Inspector;
+[Bug Fix]	  : Fixed incorrect reporting of relative drag scale and total drag scale for scale gizmos;
+
+Release 2.1.5.1
+[New Feature]: added 'SetIgnoredParentObjects' function to the 'ObjectExtrudeGizmo' class;
+
+Release 2.1.5
+[New Feature]: added RTScene.Get.SetRootObjectIgnored function to instruct the scene to exclude
+			   certain root objects from consideration;
+[New Feature]: added button to sort prefab libraries alphabetically;
+[Restored]	 : restored CanRenderCameraIcon event in the RTScene class;
+
+Release 2.1.4
+[New Feature]: the 'RTSCene.Get.AddIconRenderIgnoreCamera' function can now be used to specify cameras
+			   that should not render scene icons;
+[New Feature]: added min size property for the multi-select shape. This is useful when you need
+			   to specify a minimum size at which the shape is able to overlap objects. This value
+			   can be increased when small mouse movements cause objects to be selected accidentally;
+[New Feature]: added RTObjectSelection.Get.ForceDelete() function. This is useful when the
+		       selection needs to be deleted from code in response to a certain event;
+
+[Improvement]: improved performance for the RTScene.Render_SystemCall a little bit by avoiding 
+			   a call to CanRenderCameraIcon;
+[Improvement]: click select is now performed on mouse button up which is consistent with how Unity
+			   does things in the editor and also provides much more control over how objects get
+			   selected with the multi-select rectangle;
+
+[Bug Fix]	 : fixed bug which was preventing objects from being selected via click select when 
+			   multi-select is turned off;
+
+Release 2.1.3.2
+[New Feature]: added RLDApp.Initialized event;
+
+[Bug Fix]	 : fixed bug where holding down SHIFT to multi-deselect was causing all
+			   objects to get deselected if a selectable object was hovered by the cursor;
+
+Release 2.1.3.1
+[Bug Fix]	 : fixed spawned prefab hiding behind terrain;
+[Bug Fix]	 : fixed bug which was preventing correct interaction (gizmos, selection etc)
+			   when a custom camera viewport was used;
+
+Release 2.1.3
+[New Feature]: added SetGizmosVisisble to the RTObjectSelectionGizmos class to allow the
+			   client code to temporarily hide gizmos and prevent them from showing up again
+			   when the selection changes;
+[New Feature]: added 'Alternate move speed' property to the RTFocusCamera object which allows you
+			   to change the speed at which the camera is moving (WASDQE). The alternate speed
+			   is activated via SHIFT by default, but the hotkey can be changed in the Inspector;
+[New Feature]: added 'RTObjectSelectionGizmos.SetGizmoUsable' function which can be used to ignore
+			   gizmos in certain scenarios (e.g. certain objects should not be affected by certain gizmos);
+
+[Bug Fix]	 : fixed bug which was throwing build errors due to Unity internal texture usage;
+
+Release 2.1.2
+[New Feature]: camera icons are now rendered in the scene;
+
+[Improvement]: scene icons have been replaced with the icons that are used by Unity inside the Editor;
+
+[Bug Fix]	 : fixed bug which was causing the focus camera to be selected;
+
+Release 2.1.1
+[New Feature]: implemented 'CreatePrefabFromSceneObject' and 'CreatePrefabsFromSceneObjects' functions
+			   in the RTPrefabLib class. These are useful for creating prefabs at runtime;
+
+[Bug Fix]	 : fixed scene gizmo look and feel not serialized;
+[Bug Fix]	 : gizmo states such as enabling/disabling snapping can now correctly be activated/deactivated
+			   using the gizmo interface. Previously, this was not possible because these states would 
+			   always be overwritten by the hotkeys;
+
+Release 2.1
+--------------------------------------------------------------------------------------------------
+[New Feature]: added 'Deletable layers' mask in the RTObjectSelection Inspector to control what
+			   layers can be deleted;
+[New Feature]: added 'ExtrudeUpdate' event to object extrude gizmo;
+
+[Change]	 : removed 'IUndoRedoAction' param from 'CanUndoRedoHandler' delegate type;
+[Change]	 : renamed the 'OOBB' class to 'OBB';
+
+[Bug Fix]	 : fixed build errors for mobile devices;
+[Bug Fix]	 : fixed GetZoomFactor() not calculating zoom factor correctly for transform gizmo classes;
+[Bug Fix]	 : fixed object groups can not be added to database via Inspector when game objects are 
+			   model prefab instances (disconnected or otherwise);
+[Bug Fix]	 : fixed extrude gizmo handles inverted when object has negative scale;
+[Bug Fix]	 : fixed argument out of range exception thrown from 'RTObjectSelectionGizmos' class;
+
+Release 2.0 (complete rebuild - name changed to Runtime Level Design)
+--------------------------------------------------------------------------------------------------
+[New Feature]: universal gizmo (Move/Rotate/Scale all in one);
+[New Feature]: object extrude gizmo;
+[New Feature]: object-to-object snap;
+[New Feature]: selection grid snap;
+[New Feature]: multiple viewport support;
+[New Feature]: greatly improved surface snapping capabilities (surface embeding, rotate and scale, 
+			   adjust anchor, offset from surface, offset from anchor, rotate around anchor);
+[New Feature]: rotate selection using the keyboard with configurable rotation steps;
+[New Feature]: object groups (handy concept useful for customizing how objects get selected);
+[New Feature]: cyclical click select - for each click, a different object will be selected from
+			   a list of objects which are hovered by the mouse cursor. This is useful in certain
+			   situations such as selecting overlapping sprites;
+[New Feature]: new transform pivots: ObjectCenterPivot, CustomWorldPivot, CustomObjectLocalPivot;
+[New Feature]: optional prefab management and runtime prefab picker;
+
+[Improvement]: lots more gizmo customization options;
+[Improvement]: smooth camera perspective transition for the scene gizmo;
+[Improvement]: box scale gizmo can now be used to transform an entire hierarchy;

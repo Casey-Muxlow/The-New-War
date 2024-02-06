@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dbea2da64c4c844ea5e63867d4e309e, type: 3}
+  m_Name: FlowReactorSettings
+  m_EditorClassIdentifier: 
+  version: 
+  objectReferences: []
+  errorReport: 
+  graphWindows: []
+  favoredNodes: []
+  currentlySelectedGraph: {fileID: 0}
+  defaultColorsDark:
+  - id: actionNodeColor
+    color: {r: 0.49019608, g: 0.74509805, b: 0.627451, a: 1}
+  - id: eventNodeColor
+    color: {r: 0.47058824, g: 0.7647059, b: 1, a: 1}
+  - id: flowNodeColor
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - id: subGraphNodeColor
+    color: {r: 0.64705884, g: 0.54901963, b: 0.8039216, a: 1}
+  defaultColorsLight:
+  - id: actionNodeColor
+    color: {r: 0, g: 0.6666667, b: 0.3529412, a: 1}
+  - id: eventNodeColor
+    color: {r: 0.078431375, g: 0.47058824, b: 0.78431374, a: 1}
+  - id: flowNodeColor
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - id: subGraphNodeColor
+    color: {r: 0.43137255, g: 0.27450982, b: 0.6862745, a: 1}
+  inspectorColors:
+  - id: inspectorColor
+    color: {r: 0.64705884, g: 0.54901963, b: 0.8039216, a: 1}
+  - id: blackboardColor
+    color: {r: 0, g: 0, b: 0, a: 1}
+  - id: eventboardColor
+    color: {r: 0.47058824, g: 0.7647059, b: 1, a: 1}
+  categoryColors: []
+  createExpandedNodes: 0
+  showDialogWhenDeletingNode: 1
+  loadNodeIconsInNodePanel: 1
+  sceneObjectsOnlyBehaviour: 0
+  keyFocus: 102
+  keyCreateComment: 113
+  keyCreateGroup: 103
+  keyCreateSubGraph: 115
+  keyAlignNodesLeft: 276
+  keyAlignNodesRight: 275
+  keyAlignNodesBottom: 274
+  keyAlignNodesTop: 273
+  keyAlignNodesAutomatically: 97
+  keyGotoParentGraph: 8
+  keyExpandNodes: 270
+  keyCollapseNodes: 269
