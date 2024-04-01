@@ -4,15 +4,20 @@ using UnityEngine;
 
 public partial class PlayersController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private CharacterController characterController;
+    [SerializeField] public float movementSpeed = 5f;
+    [SerializeField] public float gravity = 9.81f;
+    private Vector3 input;
+    private Vector3 velocity;
 
-    // Update is called once per frame
-    void Update()
+
+    private void Start()
     {
-        
+        characterController = GetComponent<CharacterController>();
+    }
+    private void Update()
+    {
+        HandleInput();
+        MoveCharacter(input);
     }
 }
