@@ -23,6 +23,7 @@ public class FPController : MonoBehaviour {
 		cam = GetComponentInChildren<Camera> ();
 		cc = GetComponent<CharacterController> ();
 		Cursor.visible = false;
+		Cursor.lockState = CursorLockMode.Locked;
 	}
 	
 	// Update is called once per frame
