@@ -1,48 +1,122 @@
 fileFormatVersion: 2
 guid: 7227ac21d458488438291a52c7ef5a39
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Floor_Decal__4.001
-    100004: Wall_400
-    100006: Wall_400.001
-    100008: Cube.039
-    400000: //RootNode
-    400002: Floor_Decal__4.001
-    400004: Wall_400
-    400006: Wall_400.001
-    400008: Cube.039
-    2100000: MainColor_01
-    2100002: MainColor_03
-    2100004: MainColor_02
-    2100006: Floor_Decals_01
-    2100008: Signs
-    2100010: Labels
-    2100012: Metal_Mesh
-    2100014: Decals_2
-    2100016: ThermoFoil
-    2100018: Floor_Decals_02
-    2100020: Scaffolds
-    2300000: //RootNode
-    2300002: Floor_Decal__4.001
-    2300004: Wall_400
-    2300006: Wall_400.001
-    2300008: Cube.039
-    3300000: //RootNode
-    3300002: Floor_Decal__4.001
-    3300004: Wall_400
-    3300006: Wall_400.001
-    3300008: Cube.039
-    4300000: Wall_400
-    4300002: Floor_Decal__4.001
-    4300004: Wall_400.001
-    4300006: Cube.039
-    4300008: Corridor_01
-    2186277476908879412: ImportLogs
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Floor_Decal__4.001
+  - first:
+      1: 100004
+    second: Wall_400
+  - first:
+      1: 100006
+    second: Wall_400.001
+  - first:
+      1: 100008
+    second: Cube.039
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Floor_Decal__4.001
+  - first:
+      4: 400004
+    second: Wall_400
+  - first:
+      4: 400006
+    second: Wall_400.001
+  - first:
+      4: 400008
+    second: Cube.039
+  - first:
+      21: 2100000
+    second: MainColor_01
+  - first:
+      21: 2100002
+    second: MainColor_03
+  - first:
+      21: 2100004
+    second: MainColor_02
+  - first:
+      21: 2100006
+    second: Floor_Decals_01
+  - first:
+      21: 2100008
+    second: Signs
+  - first:
+      21: 2100010
+    second: Labels
+  - first:
+      21: 2100012
+    second: Metal_Mesh
+  - first:
+      21: 2100014
+    second: Decals_2
+  - first:
+      21: 2100016
+    second: ThermoFoil
+  - first:
+      21: 2100018
+    second: Floor_Decals_02
+  - first:
+      21: 2100020
+    second: Scaffolds
+  - first:
+      23: 2300000
+    second: //RootNode
+  - first:
+      23: 2300002
+    second: Floor_Decal__4.001
+  - first:
+      23: 2300004
+    second: Wall_400
+  - first:
+      23: 2300006
+    second: Wall_400.001
+  - first:
+      23: 2300008
+    second: Cube.039
+  - first:
+      33: 3300000
+    second: //RootNode
+  - first:
+      33: 3300002
+    second: Floor_Decal__4.001
+  - first:
+      33: 3300004
+    second: Wall_400
+  - first:
+      33: 3300006
+    second: Wall_400.001
+  - first:
+      33: 3300008
+    second: Cube.039
+  - first:
+      43: 4300000
+    second: Wall_400
+  - first:
+      43: 4300002
+    second: Floor_Decal__4.001
+  - first:
+      43: 4300004
+    second: Wall_400.001
+  - first:
+      43: 4300006
+    second: Cube.039
+  - first:
+      43: 4300008
+    second: Corridor_01
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
   externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -75,25 +149,28 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 0
     importCameras: 0
     importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -102,10 +179,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -115,13 +192,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

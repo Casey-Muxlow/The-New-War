@@ -1,52 +1,134 @@
 fileFormatVersion: 2
 guid: 30382baa87d2a4548b6509e8cb75e9ee
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: LOD_0.102
-    100004: LOD_0.103
-    100006: LOD_1.017_Plane.003
-    100008: LOD_1.029_Plane.003
-    100010: Panel_11.004
-    100012: Panel_20.005
-    400000: //RootNode
-    400002: LOD_0.102
-    400004: LOD_0.103
-    400006: LOD_1.017_Plane.003
-    400008: LOD_1.029_Plane.003
-    400010: Panel_11.004
-    400012: Panel_20.005
-    2100000: Floor_Decals_01
-    2100002: Floor_Decals_03
-    2100004: Floor_Decals_02
-    2100006: MainColor_01
-    2100008: MainColor_02
-    2100010: Controls
-    2100012: MainColor_03
-    2100014: Signs
-    2100016: Glass
-    2100018: Controls_LOD.003
-    2300000: //RootNode
-    2300002: LOD_0.102
-    2300004: LOD_0.103
-    2300006: LOD_1.017_Plane.003
-    2300008: LOD_1.029_Plane.003
-    3300000: //RootNode
-    3300002: LOD_0.102
-    3300004: LOD_0.103
-    3300006: LOD_1.017_Plane.003
-    3300008: LOD_1.029_Plane.003
-    4300000: Floor_Decal_20
-    4300002: Floor_Decal_20.002
-    4300004: Prop_31
-    4300006: LOD_0.102
-    4300008: LOD_1.017_Plane.003
-    4300010: LOD_0.103
-    4300012: LOD_1.029_Plane.003
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: LOD_0.102
+  - first:
+      1: 100004
+    second: LOD_0.103
+  - first:
+      1: 100006
+    second: LOD_1.017_Plane.003
+  - first:
+      1: 100008
+    second: LOD_1.029_Plane.003
+  - first:
+      1: 100010
+    second: Panel_11.004
+  - first:
+      1: 100012
+    second: Panel_20.005
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: LOD_0.102
+  - first:
+      4: 400004
+    second: LOD_0.103
+  - first:
+      4: 400006
+    second: LOD_1.017_Plane.003
+  - first:
+      4: 400008
+    second: LOD_1.029_Plane.003
+  - first:
+      4: 400010
+    second: Panel_11.004
+  - first:
+      4: 400012
+    second: Panel_20.005
+  - first:
+      21: 2100000
+    second: Floor_Decals_01
+  - first:
+      21: 2100002
+    second: Floor_Decals_03
+  - first:
+      21: 2100004
+    second: Floor_Decals_02
+  - first:
+      21: 2100006
+    second: MainColor_01
+  - first:
+      21: 2100008
+    second: MainColor_02
+  - first:
+      21: 2100010
+    second: Controls
+  - first:
+      21: 2100012
+    second: MainColor_03
+  - first:
+      21: 2100014
+    second: Signs
+  - first:
+      21: 2100016
+    second: Glass
+  - first:
+      21: 2100018
+    second: Controls_LOD.003
+  - first:
+      23: 2300000
+    second: //RootNode
+  - first:
+      23: 2300002
+    second: LOD_0.102
+  - first:
+      23: 2300004
+    second: LOD_0.103
+  - first:
+      23: 2300006
+    second: LOD_1.017_Plane.003
+  - first:
+      23: 2300008
+    second: LOD_1.029_Plane.003
+  - first:
+      33: 3300000
+    second: //RootNode
+  - first:
+      33: 3300002
+    second: LOD_0.102
+  - first:
+      33: 3300004
+    second: LOD_0.103
+  - first:
+      33: 3300006
+    second: LOD_1.017_Plane.003
+  - first:
+      33: 3300008
+    second: LOD_1.029_Plane.003
+  - first:
+      43: 4300000
+    second: Floor_Decal_20
+  - first:
+      43: 4300002
+    second: Floor_Decal_20.002
+  - first:
+      43: 4300004
+    second: Prop_31
+  - first:
+      43: 4300006
+    second: LOD_0.102
+  - first:
+      43: 4300008
+    second: LOD_1.017_Plane.003
+  - first:
+      43: 4300010
+    second: LOD_0.103
+  - first:
+      43: 4300012
+    second: LOD_1.029_Plane.003
   externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -79,25 +161,28 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 0
     importCameras: 0
     importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -106,10 +191,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -119,13 +204,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

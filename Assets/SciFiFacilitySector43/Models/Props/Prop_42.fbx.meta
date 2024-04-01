@@ -1,109 +1,305 @@
 fileFormatVersion: 2
 guid: 90d297a9c04db3c45a8b5c04b48bf41b
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Cap_03_lod_0.003
-    100002: //RootNode
-    100004: Cap_lod_0
-    100006: Cap_lod_1
-    100008: Latch_lod_0
-    100010: Latch_lod_1
-    100012: Collider
-    100014: Cap_01_lod_0
-    100016: Cap_01_lod_1
-    100018: Cap_02_lod_0
-    100020: Cap_02_lod_1
-    100022: Cap_03_lod_0
-    100024: Cap_03_lod_1
-    100026: Cap_04.001
-    100028: Details.001
-    100030: Legs
-    100032: Pistons
-    100034: Collider.015
-    400000: Cap_03_lod_0.003
-    400002: //RootNode
-    400004: Cap_lod_0
-    400006: Cap_lod_1
-    400008: Latch_lod_0
-    400010: Latch_lod_1
-    400012: Collider
-    400014: Cap_01_lod_0
-    400016: Cap_01_lod_1
-    400018: Cap_02_lod_0
-    400020: Cap_02_lod_1
-    400022: Cap_03_lod_0
-    400024: Cap_03_lod_1
-    400026: Cap_04.001
-    400028: Details.001
-    400030: Legs
-    400032: Pistons
-    400034: Collider.015
-    2100000: MainColor_01
-    2100002: Caps
-    2100004: Signs
-    2100006: Labels
-    2100008: MainColor_02
-    2100010: Props_small
-    2100012: No Name
-    2100014: Decals_2
-    2100016: Glass
-    2300000: Cap_03_lod_0.003
-    2300002: //RootNode
-    2300004: Cap_lod_0
-    2300006: Cap_lod_1
-    2300008: Latch_lod_0
-    2300010: Latch_lod_1
-    2300012: Collider
-    2300014: Cap_01_lod_0
-    2300016: Cap_01_lod_1
-    2300018: Cap_02_lod_0
-    2300020: Cap_02_lod_1
-    2300022: Cap_03_lod_0
-    2300024: Cap_03_lod_1
-    2300026: Details.001
-    2300028: Legs
-    2300030: Pistons
-    2300032: Collider.015
-    3300000: Cap_03_lod_0.003
-    3300002: //RootNode
-    3300004: Cap_lod_0
-    3300006: Cap_lod_1
-    3300008: Latch_lod_0
-    3300010: Latch_lod_1
-    3300012: Collider
-    3300014: Cap_01_lod_0
-    3300016: Cap_01_lod_1
-    3300018: Cap_02_lod_0
-    3300020: Cap_02_lod_1
-    3300022: Cap_03_lod_0
-    3300024: Cap_03_lod_1
-    3300026: Details.001
-    3300028: Legs
-    3300030: Pistons
-    3300032: Collider.015
-    4300000: Prop_42
-    4300002: Cap_03_lod_0.003
-    4300004: Latch_lod_1
-    4300006: Latch_lod_0
-    4300008: Cap_lod_0
-    4300010: Cap_lod_1
-    4300012: Collider
-    4300014: Spaceship
-    4300016: Details.001
-    4300018: Pistons
-    4300020: Cap_01_lod_0
-    4300022: Cap_01_lod_1
-    4300024: Legs
-    4300026: Cap_02_lod_0
-    4300028: Cap_02_lod_1
-    4300030: Cap_03_lod_0
-    4300032: Cap_03_lod_1
-    4300034: Collider.015
-    2186277476908879412: ImportLogs
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Cap_03_lod_0.003
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      1: 100004
+    second: Cap_lod_0
+  - first:
+      1: 100006
+    second: Cap_lod_1
+  - first:
+      1: 100008
+    second: Latch_lod_0
+  - first:
+      1: 100010
+    second: Latch_lod_1
+  - first:
+      1: 100012
+    second: Collider
+  - first:
+      1: 100014
+    second: Cap_01_lod_0
+  - first:
+      1: 100016
+    second: Cap_01_lod_1
+  - first:
+      1: 100018
+    second: Cap_02_lod_0
+  - first:
+      1: 100020
+    second: Cap_02_lod_1
+  - first:
+      1: 100022
+    second: Cap_03_lod_0
+  - first:
+      1: 100024
+    second: Cap_03_lod_1
+  - first:
+      1: 100026
+    second: Cap_04.001
+  - first:
+      1: 100028
+    second: Details.001
+  - first:
+      1: 100030
+    second: Legs
+  - first:
+      1: 100032
+    second: Pistons
+  - first:
+      1: 100034
+    second: Collider.015
+  - first:
+      4: 400000
+    second: Cap_03_lod_0.003
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      4: 400004
+    second: Cap_lod_0
+  - first:
+      4: 400006
+    second: Cap_lod_1
+  - first:
+      4: 400008
+    second: Latch_lod_0
+  - first:
+      4: 400010
+    second: Latch_lod_1
+  - first:
+      4: 400012
+    second: Collider
+  - first:
+      4: 400014
+    second: Cap_01_lod_0
+  - first:
+      4: 400016
+    second: Cap_01_lod_1
+  - first:
+      4: 400018
+    second: Cap_02_lod_0
+  - first:
+      4: 400020
+    second: Cap_02_lod_1
+  - first:
+      4: 400022
+    second: Cap_03_lod_0
+  - first:
+      4: 400024
+    second: Cap_03_lod_1
+  - first:
+      4: 400026
+    second: Cap_04.001
+  - first:
+      4: 400028
+    second: Details.001
+  - first:
+      4: 400030
+    second: Legs
+  - first:
+      4: 400032
+    second: Pistons
+  - first:
+      4: 400034
+    second: Collider.015
+  - first:
+      21: 2100000
+    second: MainColor_01
+  - first:
+      21: 2100002
+    second: Caps
+  - first:
+      21: 2100004
+    second: Signs
+  - first:
+      21: 2100006
+    second: Labels
+  - first:
+      21: 2100008
+    second: MainColor_02
+  - first:
+      21: 2100010
+    second: Props_small
+  - first:
+      21: 2100012
+    second: No Name
+  - first:
+      21: 2100014
+    second: Decals_2
+  - first:
+      21: 2100016
+    second: Glass
+  - first:
+      23: 2300000
+    second: Cap_03_lod_0.003
+  - first:
+      23: 2300002
+    second: //RootNode
+  - first:
+      23: 2300004
+    second: Cap_lod_0
+  - first:
+      23: 2300006
+    second: Cap_lod_1
+  - first:
+      23: 2300008
+    second: Latch_lod_0
+  - first:
+      23: 2300010
+    second: Latch_lod_1
+  - first:
+      23: 2300012
+    second: Collider
+  - first:
+      23: 2300014
+    second: Cap_01_lod_0
+  - first:
+      23: 2300016
+    second: Cap_01_lod_1
+  - first:
+      23: 2300018
+    second: Cap_02_lod_0
+  - first:
+      23: 2300020
+    second: Cap_02_lod_1
+  - first:
+      23: 2300022
+    second: Cap_03_lod_0
+  - first:
+      23: 2300024
+    second: Cap_03_lod_1
+  - first:
+      23: 2300026
+    second: Details.001
+  - first:
+      23: 2300028
+    second: Legs
+  - first:
+      23: 2300030
+    second: Pistons
+  - first:
+      23: 2300032
+    second: Collider.015
+  - first:
+      33: 3300000
+    second: Cap_03_lod_0.003
+  - first:
+      33: 3300002
+    second: //RootNode
+  - first:
+      33: 3300004
+    second: Cap_lod_0
+  - first:
+      33: 3300006
+    second: Cap_lod_1
+  - first:
+      33: 3300008
+    second: Latch_lod_0
+  - first:
+      33: 3300010
+    second: Latch_lod_1
+  - first:
+      33: 3300012
+    second: Collider
+  - first:
+      33: 3300014
+    second: Cap_01_lod_0
+  - first:
+      33: 3300016
+    second: Cap_01_lod_1
+  - first:
+      33: 3300018
+    second: Cap_02_lod_0
+  - first:
+      33: 3300020
+    second: Cap_02_lod_1
+  - first:
+      33: 3300022
+    second: Cap_03_lod_0
+  - first:
+      33: 3300024
+    second: Cap_03_lod_1
+  - first:
+      33: 3300026
+    second: Details.001
+  - first:
+      33: 3300028
+    second: Legs
+  - first:
+      33: 3300030
+    second: Pistons
+  - first:
+      33: 3300032
+    second: Collider.015
+  - first:
+      43: 4300000
+    second: Prop_42
+  - first:
+      43: 4300002
+    second: Cap_03_lod_0.003
+  - first:
+      43: 4300004
+    second: Latch_lod_1
+  - first:
+      43: 4300006
+    second: Latch_lod_0
+  - first:
+      43: 4300008
+    second: Cap_lod_0
+  - first:
+      43: 4300010
+    second: Cap_lod_1
+  - first:
+      43: 4300012
+    second: Collider
+  - first:
+      43: 4300014
+    second: Spaceship
+  - first:
+      43: 4300016
+    second: Details.001
+  - first:
+      43: 4300018
+    second: Pistons
+  - first:
+      43: 4300020
+    second: Cap_01_lod_0
+  - first:
+      43: 4300022
+    second: Cap_01_lod_1
+  - first:
+      43: 4300024
+    second: Legs
+  - first:
+      43: 4300026
+    second: Cap_02_lod_0
+  - first:
+      43: 4300028
+    second: Cap_02_lod_1
+  - first:
+      43: 4300030
+    second: Cap_03_lod_0
+  - first:
+      43: 4300032
+    second: Cap_03_lod_1
+  - first:
+      43: 4300034
+    second: Collider.015
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
   externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -136,25 +332,28 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 0
     importCameras: 0
     importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -163,10 +362,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -176,13 +375,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

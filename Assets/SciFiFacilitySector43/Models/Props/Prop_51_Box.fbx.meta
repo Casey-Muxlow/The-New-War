@@ -1,52 +1,134 @@
 fileFormatVersion: 2
 guid: 79bcb5f350146054e974bb6add410f12
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: LOD_0.162
-    100002: LOD_0.170
-    100004: LOD_1.008_Plane.003
-    100006: LOD_1.011_Plane.005
-    100008: Panel_04.006
-    100010: Panel_21.004
-    100012: //RootNode
-    400000: LOD_0.162
-    400002: LOD_0.170
-    400004: LOD_1.008_Plane.003
-    400006: LOD_1.011_Plane.005
-    400008: Panel_04.006
-    400010: Panel_21.004
-    400012: //RootNode
-    2100000: Caps
-    2100002: Labels
-    2100004: Decals_2
-    2100006: Controls
-    2100008: Controls_LOD.003
-    2300000: LOD_0.162
-    2300002: LOD_0.170
-    2300004: LOD_1.008_Plane.003
-    2300006: LOD_1.011_Plane.005
-    2300008: //RootNode
-    3300000: LOD_0.162
-    3300002: LOD_0.170
-    3300004: LOD_1.008_Plane.003
-    3300006: LOD_1.011_Plane.005
-    3300008: //RootNode
-    4300000: Prop_51_Box
-    4300002: LOD_0.162
-    4300004: LOD_1.008_Plane.003
-    4300006: LOD_0.170
-    4300008: LOD_1.011_Plane.005
-    7400000: LOD_0.170|bolt_01 v2Action
-    7400002: LOD_0.170|bolt_2 v1Action
-    7400004: LOD_0.170|socket_01 v1.001Action
-    7400006: LOD_0.170|socket_01 v1.001Action.001
-    7400008: LOD_0.170|socket_01 v1.001Action.002
-    7400010: LOD_0.170|socket_01 v1.001Action.003
-    9500000: //RootNode
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: LOD_0.162
+  - first:
+      1: 100002
+    second: LOD_0.170
+  - first:
+      1: 100004
+    second: LOD_1.008_Plane.003
+  - first:
+      1: 100006
+    second: LOD_1.011_Plane.005
+  - first:
+      1: 100008
+    second: Panel_04.006
+  - first:
+      1: 100010
+    second: Panel_21.004
+  - first:
+      1: 100012
+    second: //RootNode
+  - first:
+      4: 400000
+    second: LOD_0.162
+  - first:
+      4: 400002
+    second: LOD_0.170
+  - first:
+      4: 400004
+    second: LOD_1.008_Plane.003
+  - first:
+      4: 400006
+    second: LOD_1.011_Plane.005
+  - first:
+      4: 400008
+    second: Panel_04.006
+  - first:
+      4: 400010
+    second: Panel_21.004
+  - first:
+      4: 400012
+    second: //RootNode
+  - first:
+      21: 2100000
+    second: Caps
+  - first:
+      21: 2100002
+    second: Labels
+  - first:
+      21: 2100004
+    second: Decals_2
+  - first:
+      21: 2100006
+    second: Controls
+  - first:
+      21: 2100008
+    second: Controls_LOD.003
+  - first:
+      23: 2300000
+    second: LOD_0.162
+  - first:
+      23: 2300002
+    second: LOD_0.170
+  - first:
+      23: 2300004
+    second: LOD_1.008_Plane.003
+  - first:
+      23: 2300006
+    second: LOD_1.011_Plane.005
+  - first:
+      23: 2300008
+    second: //RootNode
+  - first:
+      33: 3300000
+    second: LOD_0.162
+  - first:
+      33: 3300002
+    second: LOD_0.170
+  - first:
+      33: 3300004
+    second: LOD_1.008_Plane.003
+  - first:
+      33: 3300006
+    second: LOD_1.011_Plane.005
+  - first:
+      33: 3300008
+    second: //RootNode
+  - first:
+      43: 4300000
+    second: Prop_51_Box
+  - first:
+      43: 4300002
+    second: LOD_0.162
+  - first:
+      43: 4300004
+    second: LOD_1.008_Plane.003
+  - first:
+      43: 4300006
+    second: LOD_0.170
+  - first:
+      43: 4300008
+    second: LOD_1.011_Plane.005
+  - first:
+      74: 7400000
+    second: LOD_0.170|bolt_01 v2Action
+  - first:
+      74: 7400002
+    second: LOD_0.170|bolt_2 v1Action
+  - first:
+      74: 7400004
+    second: LOD_0.170|socket_01 v1.001Action
+  - first:
+      74: 7400006
+    second: LOD_0.170|socket_01 v1.001Action.001
+  - first:
+      74: 7400008
+    second: LOD_0.170|socket_01 v1.001Action.002
+  - first:
+      74: 7400010
+    second: LOD_0.170|socket_01 v1.001Action.003
+  - first:
+      95: 9500000
+    second: //RootNode
   externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -79,25 +161,28 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 0
     importCameras: 0
     importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -106,10 +191,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -119,13 +204,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

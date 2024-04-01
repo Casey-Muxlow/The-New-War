@@ -1,63 +1,167 @@
 fileFormatVersion: 2
 guid: 60b202dad3f160d43b672b7e028743cf
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Prop_31
-    100004: Prop_31.001
-    100006: alien
-    100008: LOD_0.102
-    100010: LOD_0.103
-    100012: LOD_1.017_Plane.003
-    100014: LOD_1.029_Plane.003
-    100016: Panel_11.004
-    100018: Panel_20.005
-    400000: //RootNode
-    400002: Prop_31
-    400004: Prop_31.001
-    400006: alien
-    400008: LOD_0.102
-    400010: LOD_0.103
-    400012: LOD_1.017_Plane.003
-    400014: LOD_1.029_Plane.003
-    400016: Panel_11.004
-    400018: Panel_20.005
-    2100000: MainColor_01
-    2100002: MainColor_02
-    2100004: Glass
-    2100006: Signs
-    2100008: MainColor_03
-    2100010: Alien
-    2100012: Controls
-    2100014: Controls_LOD.003
-    2100016: Labels
-    2300000: //RootNode
-    2300002: Prop_31
-    2300004: Prop_31.001
-    2300006: alien
-    2300008: LOD_0.102
-    2300010: LOD_0.103
-    2300012: LOD_1.017_Plane.003
-    2300014: LOD_1.029_Plane.003
-    3300000: //RootNode
-    3300002: Prop_31
-    3300004: Prop_31.001
-    3300006: alien
-    3300008: LOD_0.102
-    3300010: LOD_0.103
-    3300012: LOD_1.017_Plane.003
-    3300014: LOD_1.029_Plane.003
-    4300000: Prop_31
-    4300002: Prop_31.001
-    4300004: alien
-    4300006: LOD_0.102
-    4300008: LOD_1.017_Plane.003
-    4300010: LOD_0.103
-    4300012: LOD_1.029_Plane.003
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Prop_31
+  - first:
+      1: 100004
+    second: Prop_31.001
+  - first:
+      1: 100006
+    second: alien
+  - first:
+      1: 100008
+    second: LOD_0.102
+  - first:
+      1: 100010
+    second: LOD_0.103
+  - first:
+      1: 100012
+    second: LOD_1.017_Plane.003
+  - first:
+      1: 100014
+    second: LOD_1.029_Plane.003
+  - first:
+      1: 100016
+    second: Panel_11.004
+  - first:
+      1: 100018
+    second: Panel_20.005
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Prop_31
+  - first:
+      4: 400004
+    second: Prop_31.001
+  - first:
+      4: 400006
+    second: alien
+  - first:
+      4: 400008
+    second: LOD_0.102
+  - first:
+      4: 400010
+    second: LOD_0.103
+  - first:
+      4: 400012
+    second: LOD_1.017_Plane.003
+  - first:
+      4: 400014
+    second: LOD_1.029_Plane.003
+  - first:
+      4: 400016
+    second: Panel_11.004
+  - first:
+      4: 400018
+    second: Panel_20.005
+  - first:
+      21: 2100000
+    second: MainColor_01
+  - first:
+      21: 2100002
+    second: MainColor_02
+  - first:
+      21: 2100004
+    second: Glass
+  - first:
+      21: 2100006
+    second: Signs
+  - first:
+      21: 2100008
+    second: MainColor_03
+  - first:
+      21: 2100010
+    second: Alien
+  - first:
+      21: 2100012
+    second: Controls
+  - first:
+      21: 2100014
+    second: Controls_LOD.003
+  - first:
+      21: 2100016
+    second: Labels
+  - first:
+      23: 2300000
+    second: //RootNode
+  - first:
+      23: 2300002
+    second: Prop_31
+  - first:
+      23: 2300004
+    second: Prop_31.001
+  - first:
+      23: 2300006
+    second: alien
+  - first:
+      23: 2300008
+    second: LOD_0.102
+  - first:
+      23: 2300010
+    second: LOD_0.103
+  - first:
+      23: 2300012
+    second: LOD_1.017_Plane.003
+  - first:
+      23: 2300014
+    second: LOD_1.029_Plane.003
+  - first:
+      33: 3300000
+    second: //RootNode
+  - first:
+      33: 3300002
+    second: Prop_31
+  - first:
+      33: 3300004
+    second: Prop_31.001
+  - first:
+      33: 3300006
+    second: alien
+  - first:
+      33: 3300008
+    second: LOD_0.102
+  - first:
+      33: 3300010
+    second: LOD_0.103
+  - first:
+      33: 3300012
+    second: LOD_1.017_Plane.003
+  - first:
+      33: 3300014
+    second: LOD_1.029_Plane.003
+  - first:
+      43: 4300000
+    second: Prop_31
+  - first:
+      43: 4300002
+    second: Prop_31.001
+  - first:
+      43: 4300004
+    second: alien
+  - first:
+      43: 4300006
+    second: LOD_0.102
+  - first:
+      43: 4300008
+    second: LOD_1.017_Plane.003
+  - first:
+      43: 4300010
+    second: LOD_0.103
+  - first:
+      43: 4300012
+    second: LOD_1.029_Plane.003
   externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -90,25 +194,28 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 0
     importCameras: 0
     importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -117,10 +224,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -130,13 +237,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

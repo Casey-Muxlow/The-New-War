@@ -1,109 +1,305 @@
 fileFormatVersion: 2
 guid: 6ee67fa9e4f3d5f47bcd6b8660545a43
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Collider.002
-    100002: Collider.003
-    100004: Collider.004
-    100006: Collider.005
-    100008: Collider.006
-    100010: Wall_250_4x3
-    100012: Wall_250_4x3.002
-    100014: Wall_251_2x3
-    100016: Wall_252_2x3
-    100018: Wall_253_4x3_Cap
-    100020: Wall_255_Corner
-    100022: Wall_256_InnerCorner
-    100024: //RootNode
-    100026: Wall_257_Clamp
-    100028: Wall_260_4x1.5
-    100030: Wall_261_2x1.5
-    100032: Wall_262_1x1.5
-    100034: Wall_263_2x1.5
-    100036: Wall_264_Clamp
-    400000: Collider.002
-    400002: Collider.003
-    400004: Collider.004
-    400006: Collider.005
-    400008: Collider.006
-    400010: Wall_250_4x3
-    400012: Wall_250_4x3.002
-    400014: Wall_251_2x3
-    400016: Wall_252_2x3
-    400018: Wall_253_4x3_Cap
-    400020: Wall_255_Corner
-    400022: Wall_256_InnerCorner
-    400024: //RootNode
-    400026: Wall_257_Clamp
-    400028: Wall_260_4x1.5
-    400030: Wall_261_2x1.5
-    400032: Wall_262_1x1.5
-    400034: Wall_263_2x1.5
-    400036: Wall_264_Clamp
-    2100000: MainColor_02
-    2100002: MainColor_01
-    2100004: No Name
-    2100006: Signs
-    2300000: Collider.002
-    2300002: Collider.003
-    2300004: Collider.004
-    2300006: Collider.005
-    2300008: Collider.006
-    2300010: Wall_250_4x3
-    2300012: Wall_250_4x3.002
-    2300014: Wall_251_2x3
-    2300016: Wall_252_2x3
-    2300018: Wall_253_4x3_Cap
-    2300020: Wall_255_Corner
-    2300022: Wall_256_InnerCorner
-    2300024: Wall_257_Clamp
-    2300026: Wall_260_4x1.5
-    2300028: Wall_261_2x1.5
-    2300030: Wall_262_1x1.5
-    2300032: Wall_263_2x1.5
-    2300034: Wall_264_Clamp
-    2300036: //RootNode
-    3300000: Collider.002
-    3300002: Collider.003
-    3300004: Collider.004
-    3300006: Collider.005
-    3300008: Collider.006
-    3300010: Wall_250_4x3
-    3300012: Wall_250_4x3.002
-    3300014: Wall_251_2x3
-    3300016: Wall_252_2x3
-    3300018: Wall_253_4x3_Cap
-    3300020: Wall_255_Corner
-    3300022: Wall_256_InnerCorner
-    3300024: Wall_257_Clamp
-    3300026: Wall_260_4x1.5
-    3300028: Wall_261_2x1.5
-    3300030: Wall_262_1x1.5
-    3300032: Wall_263_2x1.5
-    3300034: Wall_264_Clamp
-    3300036: //RootNode
-    4300000: Wall_250_4x3
-    4300002: Collider.006
-    4300004: Wall_253_4x3_Cap
-    4300006: Collider.004
-    4300008: Wall_255_Corner
-    4300010: Wall_251_2x3
-    4300012: Collider.002
-    4300014: Wall_252_2x3
-    4300016: Collider.003
-    4300018: Wall_257_Clamp
-    4300020: Collider.005
-    4300022: Wall_260_4x1.5
-    4300024: Wall_262_1x1.5
-    4300026: Wall_261_2x1.5
-    4300028: Wall_263_2x1.5
-    4300030: Wall_264_Clamp
-    4300032: Wall_256_InnerCorner
-    4300034: Wall_250_4x3.002
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Collider.002
+  - first:
+      1: 100002
+    second: Collider.003
+  - first:
+      1: 100004
+    second: Collider.004
+  - first:
+      1: 100006
+    second: Collider.005
+  - first:
+      1: 100008
+    second: Collider.006
+  - first:
+      1: 100010
+    second: Wall_250_4x3
+  - first:
+      1: 100012
+    second: Wall_250_4x3.002
+  - first:
+      1: 100014
+    second: Wall_251_2x3
+  - first:
+      1: 100016
+    second: Wall_252_2x3
+  - first:
+      1: 100018
+    second: Wall_253_4x3_Cap
+  - first:
+      1: 100020
+    second: Wall_255_Corner
+  - first:
+      1: 100022
+    second: Wall_256_InnerCorner
+  - first:
+      1: 100024
+    second: //RootNode
+  - first:
+      1: 100026
+    second: Wall_257_Clamp
+  - first:
+      1: 100028
+    second: Wall_260_4x1.5
+  - first:
+      1: 100030
+    second: Wall_261_2x1.5
+  - first:
+      1: 100032
+    second: Wall_262_1x1.5
+  - first:
+      1: 100034
+    second: Wall_263_2x1.5
+  - first:
+      1: 100036
+    second: Wall_264_Clamp
+  - first:
+      4: 400000
+    second: Collider.002
+  - first:
+      4: 400002
+    second: Collider.003
+  - first:
+      4: 400004
+    second: Collider.004
+  - first:
+      4: 400006
+    second: Collider.005
+  - first:
+      4: 400008
+    second: Collider.006
+  - first:
+      4: 400010
+    second: Wall_250_4x3
+  - first:
+      4: 400012
+    second: Wall_250_4x3.002
+  - first:
+      4: 400014
+    second: Wall_251_2x3
+  - first:
+      4: 400016
+    second: Wall_252_2x3
+  - first:
+      4: 400018
+    second: Wall_253_4x3_Cap
+  - first:
+      4: 400020
+    second: Wall_255_Corner
+  - first:
+      4: 400022
+    second: Wall_256_InnerCorner
+  - first:
+      4: 400024
+    second: //RootNode
+  - first:
+      4: 400026
+    second: Wall_257_Clamp
+  - first:
+      4: 400028
+    second: Wall_260_4x1.5
+  - first:
+      4: 400030
+    second: Wall_261_2x1.5
+  - first:
+      4: 400032
+    second: Wall_262_1x1.5
+  - first:
+      4: 400034
+    second: Wall_263_2x1.5
+  - first:
+      4: 400036
+    second: Wall_264_Clamp
+  - first:
+      21: 2100000
+    second: MainColor_02
+  - first:
+      21: 2100002
+    second: MainColor_01
+  - first:
+      21: 2100004
+    second: No Name
+  - first:
+      21: 2100006
+    second: Signs
+  - first:
+      23: 2300000
+    second: Collider.002
+  - first:
+      23: 2300002
+    second: Collider.003
+  - first:
+      23: 2300004
+    second: Collider.004
+  - first:
+      23: 2300006
+    second: Collider.005
+  - first:
+      23: 2300008
+    second: Collider.006
+  - first:
+      23: 2300010
+    second: Wall_250_4x3
+  - first:
+      23: 2300012
+    second: Wall_250_4x3.002
+  - first:
+      23: 2300014
+    second: Wall_251_2x3
+  - first:
+      23: 2300016
+    second: Wall_252_2x3
+  - first:
+      23: 2300018
+    second: Wall_253_4x3_Cap
+  - first:
+      23: 2300020
+    second: Wall_255_Corner
+  - first:
+      23: 2300022
+    second: Wall_256_InnerCorner
+  - first:
+      23: 2300024
+    second: Wall_257_Clamp
+  - first:
+      23: 2300026
+    second: Wall_260_4x1.5
+  - first:
+      23: 2300028
+    second: Wall_261_2x1.5
+  - first:
+      23: 2300030
+    second: Wall_262_1x1.5
+  - first:
+      23: 2300032
+    second: Wall_263_2x1.5
+  - first:
+      23: 2300034
+    second: Wall_264_Clamp
+  - first:
+      23: 2300036
+    second: //RootNode
+  - first:
+      33: 3300000
+    second: Collider.002
+  - first:
+      33: 3300002
+    second: Collider.003
+  - first:
+      33: 3300004
+    second: Collider.004
+  - first:
+      33: 3300006
+    second: Collider.005
+  - first:
+      33: 3300008
+    second: Collider.006
+  - first:
+      33: 3300010
+    second: Wall_250_4x3
+  - first:
+      33: 3300012
+    second: Wall_250_4x3.002
+  - first:
+      33: 3300014
+    second: Wall_251_2x3
+  - first:
+      33: 3300016
+    second: Wall_252_2x3
+  - first:
+      33: 3300018
+    second: Wall_253_4x3_Cap
+  - first:
+      33: 3300020
+    second: Wall_255_Corner
+  - first:
+      33: 3300022
+    second: Wall_256_InnerCorner
+  - first:
+      33: 3300024
+    second: Wall_257_Clamp
+  - first:
+      33: 3300026
+    second: Wall_260_4x1.5
+  - first:
+      33: 3300028
+    second: Wall_261_2x1.5
+  - first:
+      33: 3300030
+    second: Wall_262_1x1.5
+  - first:
+      33: 3300032
+    second: Wall_263_2x1.5
+  - first:
+      33: 3300034
+    second: Wall_264_Clamp
+  - first:
+      33: 3300036
+    second: //RootNode
+  - first:
+      43: 4300000
+    second: Wall_250_4x3
+  - first:
+      43: 4300002
+    second: Collider.006
+  - first:
+      43: 4300004
+    second: Wall_253_4x3_Cap
+  - first:
+      43: 4300006
+    second: Collider.004
+  - first:
+      43: 4300008
+    second: Wall_255_Corner
+  - first:
+      43: 4300010
+    second: Wall_251_2x3
+  - first:
+      43: 4300012
+    second: Collider.002
+  - first:
+      43: 4300014
+    second: Wall_252_2x3
+  - first:
+      43: 4300016
+    second: Collider.003
+  - first:
+      43: 4300018
+    second: Wall_257_Clamp
+  - first:
+      43: 4300020
+    second: Collider.005
+  - first:
+      43: 4300022
+    second: Wall_260_4x1.5
+  - first:
+      43: 4300024
+    second: Wall_262_1x1.5
+  - first:
+      43: 4300026
+    second: Wall_261_2x1.5
+  - first:
+      43: 4300028
+    second: Wall_263_2x1.5
+  - first:
+      43: 4300030
+    second: Wall_264_Clamp
+  - first:
+      43: 4300032
+    second: Wall_256_InnerCorner
+  - first:
+      43: 4300034
+    second: Wall_250_4x3.002
   externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -136,25 +332,28 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 0
     importCameras: 0
     importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -163,10 +362,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -176,13 +375,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
