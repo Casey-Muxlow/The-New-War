@@ -1946,7 +1946,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -2030,7 +2030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8760dcbe99cc55a428658aac4944873a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 20
+  sensitivity: 60
   lockVertMin: -50
   lockVertMax: 50
   invertY: 0
@@ -3074,6 +3074,7 @@ MonoBehaviour:
   characterController: {fileID: 6609871536153848216}
   movementSpeed: 5
   gravity: 9.81
+  animator: {fileID: 3205687638539609274}
 --- !u!54 &894300586081756366
 Rigidbody:
   m_ObjectHideFlags: 0

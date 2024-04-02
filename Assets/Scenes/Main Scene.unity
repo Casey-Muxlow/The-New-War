@@ -408,11 +408,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
---- !u!95 &208587182 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3205687638539609274, guid: ef08fd27d8427954d9eefb5697f2255b, type: 3}
-  m_PrefabInstance: {fileID: 500723054}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &275205324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -820,14 +815,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3205687638539609274, guid: ef08fd27d8427954d9eefb5697f2255b, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: cd9b8d92fb348c44f863cd4bd019caf7, type: 2}
-    - target: {fileID: 5082102719255286605, guid: ef08fd27d8427954d9eefb5697f2255b, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 208587182}
     - target: {fileID: 8203059967394980986, guid: ef08fd27d8427954d9eefb5697f2255b, type: 3}
       propertyPath: m_Name
       value: Sci_Fi_Character_08_05
