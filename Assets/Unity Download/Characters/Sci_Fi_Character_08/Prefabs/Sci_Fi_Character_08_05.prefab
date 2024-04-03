@@ -843,6 +843,37 @@ Transform:
   - {fileID: 6575411315635568998}
   m_Father: {fileID: 6038106101316085261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2267486782708480732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2389263744051904868}
+  m_Layer: 0
+  m_Name: GunHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2389263744051904868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2267486782708480732}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2464800871475437602}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2402332643530793239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1579,52 @@ Transform:
   - {fileID: 1119637186259365496}
   m_Father: {fileID: 5709045646053303620}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4639728021019680583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6950167478316907828}
+  - component: {fileID: 2860799104188534262}
+  m_Layer: 0
+  m_Name: Rig 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6950167478316907828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4639728021019680583}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.962, y: -1.067, z: -0.8069453}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8835164411531263680}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2860799104188534262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4639728021019680583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b342d8ce5c2fd48b8fa3147d48d1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Weight: 1
+  m_Effectors: []
 --- !u!1 &4827920678857631625
 GameObject:
   m_ObjectHideFlags: 0
@@ -2976,6 +3053,8 @@ GameObject:
   - component: {fileID: 6609871536153848216}
   - component: {fileID: 5082102719255286605}
   - component: {fileID: 894300586081756366}
+  - component: {fileID: 379062726489798940}
+  - component: {fileID: 1550792848368568249}
   m_Layer: 6
   m_Name: Sci_Fi_Character_08_05
   m_TagString: Player
@@ -3010,6 +3089,7 @@ Transform:
   - {fileID: 5708642254214919075}
   - {fileID: 8209462857131149191}
   - {fileID: 1646702600820893738}
+  - {fileID: 6950167478316907828}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &3205687638539609274
@@ -3102,6 +3182,96 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &379062726489798940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8203059967394980986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff0960ef4ea6e04eac66b4a7fd2189d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RigLayers:
+  - m_Rig: {fileID: 2860799104188534262}
+    m_Active: 1
+  m_Effectors: []
+--- !u!114 &1550792848368568249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8203059967394980986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boneShape: 1
+  drawBones: 1
+  drawTripods: 0
+  boneSize: 1
+  tripodSize: 1
+  boneColor: {r: 0, g: 0, b: 1, a: 0.5}
+  m_Transforms:
+  - {fileID: 6153520332713449810}
+  - {fileID: 1729909036486916043}
+  - {fileID: 7134222199397598617}
+  - {fileID: 7244408304460071859}
+  - {fileID: 5054270275057756343}
+  - {fileID: 7412940623170012338}
+  - {fileID: 6038106101316085261}
+  - {fileID: 2022022965111561442}
+  - {fileID: 5709045646053303620}
+  - {fileID: 4233463186458688361}
+  - {fileID: 7916930421345320809}
+  - {fileID: 2844280744958106374}
+  - {fileID: 8575825439041236636}
+  - {fileID: 6509627239311136949}
+  - {fileID: 7128112306572937354}
+  - {fileID: 3949864503425190176}
+  - {fileID: 4688669046126893470}
+  - {fileID: 3851054490577293782}
+  - {fileID: 3532773441240884307}
+  - {fileID: 4187432654952888579}
+  - {fileID: 3829804438154628521}
+  - {fileID: 1090428003073240240}
+  - {fileID: 4090116638081995771}
+  - {fileID: 1284807706656518888}
+  - {fileID: 3503495307663088332}
+  - {fileID: 5072721196540655441}
+  - {fileID: 7432938359321067321}
+  - {fileID: 8692641663899000316}
+  - {fileID: 6575411315635568998}
+  - {fileID: 3124964018595498371}
+  - {fileID: 9182034742565144184}
+  - {fileID: 9192077170170315871}
+  - {fileID: 8947781733654296709}
+  - {fileID: 4875943921041736783}
+  - {fileID: 2464800871475437602}
+  - {fileID: 3253098926706767577}
+  - {fileID: 2969570290708358526}
+  - {fileID: 2482202359978641695}
+  - {fileID: 6825232677927933299}
+  - {fileID: 1025655448456990647}
+  - {fileID: 6610767576193968849}
+  - {fileID: 8597952205254774922}
+  - {fileID: 6588021197839615457}
+  - {fileID: 3017100583422904638}
+  - {fileID: 6072602875089440845}
+  - {fileID: 2932692937926638180}
+  - {fileID: 1415992527065455588}
+  - {fileID: 6610957101976589423}
+  - {fileID: 6363082599293741826}
+  - {fileID: 4294452794739488949}
+  - {fileID: 2650026073005371423}
+  - {fileID: 4070329821784668130}
+  - {fileID: 8854883869783166368}
+  - {fileID: 1288598657431909604}
+  - {fileID: 1119637186259365496}
 --- !u!1 &8459383837985287157
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,6 +3398,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3253098926706767577}
+  - {fileID: 2389263744051904868}
   m_Father: {fileID: 2844280744958106374}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8778638370398031308
