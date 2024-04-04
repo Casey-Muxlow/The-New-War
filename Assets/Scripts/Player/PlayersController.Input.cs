@@ -19,10 +19,10 @@ public partial class PlayersController
         Vector2 keyboardInput = new Vector2(UnityEngine.Input.GetAxis("Horizontal"), UnityEngine.Input.GetAxis("Vertical"));
 
         // Get movement input from controller.
-        Vector2 controllerInput = new Vector2(UnityEngine.Input.GetAxis("ControllerHorizontal"), UnityEngine.Input.GetAxis("ControllerVertical"));
+        //Vector2 controllerInput = new Vector2(UnityEngine.Input.GetAxis("ControllerHorizontal"), UnityEngine.Input.GetAxis("ControllerVertical"));
 
         // Combine both inputs to support multiple input methods.
-        Vector2 combinedInput = keyboardInput + controllerInput;
+        Vector2 combinedInput = keyboardInput/* + controllerInput*/;
 
         // You might want to clamp the input to prevent excessive speed.
         combinedInput = Vector2.ClampMagnitude(combinedInput, 1f);
