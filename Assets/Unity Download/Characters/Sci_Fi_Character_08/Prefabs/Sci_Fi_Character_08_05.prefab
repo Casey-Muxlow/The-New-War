@@ -2107,13 +2107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8760dcbe99cc55a428658aac4944873a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 550
-  lockVertMin: -50
-  lockVertMax: 50
-  invertY: 0
-  aud: {fileID: 0}
-  characterTransform: {fileID: 8835164411531263680}
-  headTransform: {fileID: 7128112306572937354}
 --- !u!1 &5488337708463695506
 GameObject:
   m_ObjectHideFlags: 0
@@ -3152,9 +3145,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2456079c6283f2f4d90af8211d01f244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 6609871536153848216}
   movementSpeed: 5
-  gravity: 9.81
+  mouseSensitivity: 5
+  jumpSpeed: 10
+  rotationLeftRight: 0
+  verticalRotation: 0
+  forwardspeed: 0
+  sideSpeed: 0
+  verticalVelocity: 0
+  speedCombined: {x: 0, y: 0, z: 0}
+  playerController: {fileID: 6609871536153848216}
+  mainCamera: {fileID: 2221202118269853086}
   animator: {fileID: 3205687638539609274}
 --- !u!54 &894300586081756366
 Rigidbody:
