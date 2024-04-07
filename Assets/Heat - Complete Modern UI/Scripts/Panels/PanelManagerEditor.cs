@@ -42,6 +42,7 @@ namespace Michsky.UI.Heat
             var cullPanels = serializedObject.FindProperty("cullPanels");
             var onPanelChanged = serializedObject.FindProperty("onPanelChanged");
             var initializeButtons = serializedObject.FindProperty("initializeButtons");
+            var useCooldownForHotkeys = serializedObject.FindProperty("useCooldownForHotkeys");
             var bypassAnimationOnEnable = serializedObject.FindProperty("bypassAnimationOnEnable");
             var updateMode = serializedObject.FindProperty("updateMode");
             var panelMode = serializedObject.FindProperty("panelMode");
@@ -112,6 +113,7 @@ namespace Michsky.UI.Heat
                     HeatUIEditorHandler.DrawHeader(customSkin, "Options Header", 6);
                     cullPanels.boolValue = HeatUIEditorHandler.DrawToggle(cullPanels.boolValue, customSkin, "Cull Panels", "Disables unused panels.");
                     initializeButtons.boolValue = HeatUIEditorHandler.DrawToggle(initializeButtons.boolValue, customSkin, "Initialize Buttons", "Automatically adds necessary events to buttons.");
+                    useCooldownForHotkeys.boolValue = HeatUIEditorHandler.DrawToggle(useCooldownForHotkeys.boolValue, customSkin, "Use Cooldown For Hotkeys", "Fixes input issues when switching panels via hotkeys.");
                     bypassAnimationOnEnable.boolValue = HeatUIEditorHandler.DrawToggle(bypassAnimationOnEnable.boolValue, customSkin, "Bypass Animation On Enable");
                     HeatUIEditorHandler.DrawProperty(updateMode, customSkin, "Update Mode");
                     HeatUIEditorHandler.DrawProperty(panelMode, customSkin, "Panel Mode");

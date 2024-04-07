@@ -61,7 +61,11 @@ namespace Michsky.UI.Heat
                 {
                     if (Selection.activeGameObject == null)
                     {
-                        var canvas = (Canvas)GameObject.FindObjectsOfType(typeof(Canvas))[0];
+#if UNITY_2023_2_OR_NEWER
+                        var canvas = FindObjectsByType<Canvas>(FindObjectsSortMode.None)[0];
+#else
+                        var canvas = (Canvas)FindObjectsOfType(typeof(Canvas))[0];
+#endif
                         clone.transform.SetParent(canvas.transform, false);
                     }
 
@@ -74,7 +78,11 @@ namespace Michsky.UI.Heat
                 catch
                 {
                     CreateCanvas();
-                    var canvas = (Canvas)GameObject.FindObjectsOfType(typeof(Canvas))[0];
+#if UNITY_2023_2_OR_NEWER
+                    var canvas = FindObjectsByType<Canvas>(FindObjectsSortMode.None)[0];
+#else
+                    var canvas = (Canvas)FindObjectsOfType(typeof(Canvas))[0];
+#endif
                     clone.transform.SetParent(canvas.transform, false);
                     clone.name = clone.name.Replace("(Clone)", "").Trim();
                     MakeSceneDirty(clone, clone.name);

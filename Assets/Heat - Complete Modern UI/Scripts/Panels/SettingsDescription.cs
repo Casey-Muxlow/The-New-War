@@ -26,8 +26,8 @@ namespace Michsky.UI.Heat
                 manager = FindObjectsByType<SettingsDescriptionManager>(FindObjectsSortMode.None)[0];
             }
 #else
-            if (manager == null && FindObjectsOfType(typeof(SettingsDescriptionManager)).Length > 0) 
-            { 
+            if (manager == null && FindObjectsOfType(typeof(SettingsDescriptionManager)).Length > 0)
+            {
                 manager = (SettingsDescriptionManager)FindObjectsOfType(typeof(SettingsDescriptionManager))[0];
             }
 #endif
@@ -35,25 +35,32 @@ namespace Michsky.UI.Heat
 
             if (element == null) { element = gameObject.GetComponent<SettingsElement>(); }
 
-            element.onHover.AddListener(delegate
+            element.onHover.AddListener(delegate { UpdateManager(); });
+            element.onLeave.AddListener(delegate { SetManagerToDefault(); });
+        }
+
+        public void UpdateManager()
+        {
+            if (manager == null)
+                return;
+
+            if (manager.localizedObject != null && manager.useLocalization && !string.IsNullOrEmpty(titleKey) && !string.IsNullOrEmpty(descriptionKey))
             {
-                if (manager == null)
-                    return;
+                manager.UpdateUI(manager.localizedObject.GetKeyOutput(titleKey), manager.localizedObject.GetKeyOutput(descriptionKey), cover);
+            }
 
-                if (manager.localizedObject != null && manager.useLocalization == true && !string.IsNullOrEmpty(titleKey) && !string.IsNullOrEmpty(descriptionKey)) 
-                {
-                    manager.UpdateUI(manager.localizedObject.GetKeyOutput(titleKey), manager.localizedObject.GetKeyOutput(descriptionKey), cover); 
-                }
-                else { manager.UpdateUI(title, description, cover); }
-            });
-
-            element.onLeave.AddListener(delegate
+            else
             {
-                if (manager == null)
-                    return;
+                manager.UpdateUI(title, description, cover);
+            }
+        }
 
-                manager.SetDefault();
-            });
+        public void SetManagerToDefault()
+        {
+            if (manager == null)
+                return;
+
+            manager.SetDefault();
         }
     }
 }

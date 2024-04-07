@@ -34,3 +34,4 @@ MonoBehaviour:
     isExpanded: 0
   defaultLanguageID: English (en-US)
   defaultLanguageIndex: 0
+  enableExperimental: 0

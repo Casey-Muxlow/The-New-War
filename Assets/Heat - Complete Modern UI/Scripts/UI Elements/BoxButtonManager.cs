@@ -65,7 +65,6 @@ namespace Michsky.UI.Heat
         float cachedStateLength = 0.5f;
         bool waitingForDoubleClickInput;
         Button targetButton;
-        LocalizedObject localizedObject;
 #if UNITY_EDITOR
         public int latestTabIndex = 0;
 #endif
@@ -128,19 +127,21 @@ namespace Michsky.UI.Heat
 
             if (useLocalization && !useCustomContent)
             {
-                localizedObject = gameObject.GetComponent<LocalizedObject>();
+                LocalizedObject mainLoc = GetComponent<LocalizedObject>();
 
-                if (localizedObject == null || !localizedObject.CheckLocalizationStatus()) { useLocalization = false; }
-                else if (localizedObject != null && !string.IsNullOrEmpty(titleLocalizationKey))
+                if (mainLoc == null || !mainLoc.CheckLocalizationStatus()) { useLocalization = false; }
+                else if (mainLoc != null && !string.IsNullOrEmpty(titleLocalizationKey))
                 {
                     // Forcing button to take the localized output on awake
-                    buttonTitle = localizedObject.GetKeyOutput(titleLocalizationKey);
+                    buttonTitle = mainLoc.GetKeyOutput(titleLocalizationKey);
+                    buttonDescription = mainLoc.GetKeyOutput(descriptionLocalizationKey);
+                    mainLoc.localizationKey = titleLocalizationKey;
 
                     // Change button text on language change
-                    localizedObject.onLanguageChanged.AddListener(delegate
+                    mainLoc.onLanguageChanged.AddListener(delegate
                     {
-                        buttonTitle = localizedObject.GetKeyOutput(titleLocalizationKey);
-                        buttonDescription = localizedObject.GetKeyOutput(descriptionLocalizationKey);
+                        buttonTitle = mainLoc.GetKeyOutput(titleLocalizationKey);
+                        buttonDescription = mainLoc.GetKeyOutput(descriptionLocalizationKey);
                         UpdateUI();
                     });
                 }

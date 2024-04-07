@@ -38,7 +38,8 @@ namespace Michsky.UI.Heat
 
         // Helpers
         bool isInitialized = false;
-        LocalizedObject localizedObject;
+        public bool useCooldown = false;
+        public static bool isInCooldown = false;
 
 #if UNITY_EDITOR
         public bool showOutputOnEditor = true;
@@ -53,20 +54,18 @@ namespace Michsky.UI.Heat
             if (!Application.isPlaying) { return; }
 #endif
             if (!isInitialized) { Initialize(); }
-            if (ControllerManager.instance != null && hotkeyType == HotkeyType.Dynamic)
-            {
-                ControllerManager.instance.hotkeyObjects.Add(this);
-                controllerPreset = ControllerManager.instance.currentControllerPreset;
-            }
 
             UpdateUI();
         }
 
         void Update()
         {
-            if (hotkey.triggered) 
-            { 
+            if (Application.isPlaying && hotkey.triggered && !useCooldown) { onHotkeyPress.Invoke(); }
+            else if (Application.isPlaying && hotkey.triggered && useCooldown && !isInCooldown)
+            {
                 onHotkeyPress.Invoke();
+                StopCoroutine("StartCooldown");
+                StartCoroutine("StartCooldown");
             }
         }
 
@@ -84,10 +83,15 @@ namespace Michsky.UI.Heat
                 raycastImg.raycastTarget = true;
             }
 
-            if (UIManagerAudio.instance == null) { useSounds = false; }
+            if (ControllerManager.instance != null && hotkeyType == HotkeyType.Dynamic)
+            {
+                ControllerManager.instance.hotkeyObjects.Add(this);
+                controllerPreset = ControllerManager.instance.currentControllerPreset;
+            }
+
             if (useLocalization)
             {
-                localizedObject = gameObject.GetComponent<LocalizedObject>();
+                LocalizedObject localizedObject = gameObject.GetComponent<LocalizedObject>();
 
                 if (localizedObject == null || !localizedObject.CheckLocalizationStatus()) { useLocalization = false; }
                 else if (localizedObject != null && !string.IsNullOrEmpty(localizedObject.localizationKey))
@@ -104,10 +108,8 @@ namespace Michsky.UI.Heat
                 }
             }
 
-            if (useSounds)
-            {
-                onHotkeyPress.AddListener(delegate { UIManagerAudio.instance.audioSource.PlayOneShot(UIManagerAudio.instance.UIManagerAsset.clickSound); });
-            }
+            if (UIManagerAudio.instance == null) { useSounds = false; }
+            if (useSounds) { onHotkeyPress.AddListener(delegate { UIManagerAudio.instance.audioSource.PlayOneShot(UIManagerAudio.instance.UIManagerAsset.clickSound); }); }
 
             isInitialized = true;
         }
@@ -271,6 +273,13 @@ namespace Michsky.UI.Heat
             }
 
             highlightCG.alpha = 1;
+        }
+
+        IEnumerator StartCooldown()
+        {
+            isInCooldown = true;
+            yield return new WaitForSecondsRealtime(0.05f);
+            isInCooldown = false;
         }
     }
 }

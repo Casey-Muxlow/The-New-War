@@ -53,7 +53,7 @@ namespace Michsky.UI.Heat
         void OnEnable()
         {
             if (!isInitialized) { Initialize(); }
-            if (playOnEnable) { PlayIn(); }
+            if (playOnEnable) { isOn = false; PlayIn(); }
         }
 
         void OnDisable()

@@ -1,4 +1,4 @@
-Heat - Complete Modern UI (1.1.4)
+Heat - Complete Modern UI (1.1.6)
 
 Get started quickly: https://docs.michsky.com/docs/heat-ui/quick-start
 Online documentation: https://docs.michsky.com/docs/heat-ui/

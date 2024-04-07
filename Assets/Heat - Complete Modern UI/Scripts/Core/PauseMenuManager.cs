@@ -31,13 +31,11 @@ namespace Michsky.UI.Heat
         bool isOn = false;
         bool allowClosing = true;
         float disableAfter = 0.6f;
-        float timeScaleOriginal;
 
         public enum CursorVisibility { Default, Invisible, Visible }
 
         void Awake()
         {
-            timeScaleOriginal = Time.timeScale;
             if (pauseMenuCanvas == null)
             {
                 Debug.LogError("<b>[Pause Menu Manager]</b> Pause Menu Canvas is missing!", this);
@@ -104,7 +102,7 @@ namespace Michsky.UI.Heat
         public void ClosePauseMenu()
         {
             if (!isOn || !allowClosing) { return; }
-            if (setTimeScale == true) { Time.timeScale = timeScaleOriginal; }
+            if (setTimeScale == true) { Time.timeScale = 1; }
             if (panelManager != null) { panelManager.HideCurrentPanel(); }
 
             StopCoroutine("DisablePauseCanvas");

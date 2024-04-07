@@ -17,6 +17,7 @@ namespace Michsky.UI.Heat
         private int newPanelIndex;
         public bool cullPanels = true;
         [SerializeField] private bool initializeButtons = true;
+        [SerializeField] private bool useCooldownForHotkeys = false;
         [SerializeField] private bool bypassAnimationOnEnable = false;
         [SerializeField] private UpdateMode updateMode = UpdateMode.UnscaledTime;
         [SerializeField] private PanelMode panelMode = PanelMode.Custom;
@@ -75,10 +76,7 @@ namespace Michsky.UI.Heat
             if (panelMode == PanelMode.MainPanel) { cachedStateLength = HeatUIInternalTools.GetAnimatorClipLength(panels[currentPanelIndex].panelObject, "MainPanel_In"); }
             else if (panelMode == PanelMode.SubPanel) { cachedStateLength = HeatUIInternalTools.GetAnimatorClipLength(panels[currentPanelIndex].panelObject, "SubPanel_In"); }
             else if (panelMode == PanelMode.Custom) { cachedStateLength = 1f; }
-        }
 
-        void Start()
-        {
             if (ControllerManager.instance != null)
             {
                 managerIndex = ControllerManager.instance.panels.Count;
@@ -153,7 +151,6 @@ namespace Michsky.UI.Heat
             for (int i = 0; i < panels.Count; i++)
             {
                 if (panels[i].panelObject == null) { continue; }
-                if (panels[i].hotkeyParent != null) { panels[i].hotkeys = panels[i].hotkeyParent.GetComponentsInChildren<HotkeyEvent>(); }
                 if (i != currentPanelIndex && cullPanels) { panels[i].panelObject.gameObject.SetActive(false); }
                 if (initializeButtons)
                 {
@@ -161,6 +158,11 @@ namespace Michsky.UI.Heat
                     if (panels[i].panelButton != null) { panels[i].panelButton.onClick.AddListener(() => OpenPanel(tempName)); }
                     if (panels[i].altPanelButton != null) { panels[i].altPanelButton.onClick.AddListener(() => OpenPanel(tempName)); }
                     if (panels[i].altBoxButton != null) { panels[i].altBoxButton.onClick.AddListener(() => OpenPanel(tempName)); }
+                }
+                if (panels[i].hotkeyParent != null)
+                {
+                    panels[i].hotkeys = panels[i].hotkeyParent.GetComponentsInChildren<HotkeyEvent>();
+                    if (useCooldownForHotkeys) { foreach (HotkeyEvent he in panels[i].hotkeys) { he.useCooldown = true; } }
                 }
             }
 
