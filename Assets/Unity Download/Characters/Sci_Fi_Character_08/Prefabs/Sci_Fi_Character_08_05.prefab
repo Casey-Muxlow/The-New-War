@@ -3147,7 +3147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   mouseSensitivity: 5
-  jumpSpeed: 10
+  jumpSpeed: 7
   rotationLeftRight: 0
   verticalRotation: 0
   forwardspeed: 0

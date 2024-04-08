@@ -22,6 +22,7 @@ public partial class PlayersController : MonoBehaviour
 
     [SerializeField] private Animator animator;
 
+    private float runLayerWeight = 0f;
 
     private void Start()
     {
@@ -52,7 +53,22 @@ public partial class PlayersController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             forwardspeed *= 2f;
+            runLayerWeight = 1f;
         }
+        else
+        {
+            runLayerWeight = 0f;
+            animator.SetBool("NoWeaponRunningFwd", false);
+            animator.SetBool("NoWeaponStrafeLeft", false);
+            animator.SetBool("NoWeaponStrafeRight", false);
+            animator.SetBool("NoWeaponRunLeft", false);
+            animator.SetBool("NoWeaponRunRight", false);
+            animator.SetBool("NoWeaponRunBack", false);
+            animator.SetBool("NoWeaponRunBwdLeft", false);
+            animator.SetBool("NoWeaponRunBwdRight", false);
+        }
+
+        animator.SetLayerWeight(animator.GetLayerIndex("Run Layer"), runLayerWeight);
 
         verticalVelocity += Physics.gravity.y * Time.deltaTime;
 
@@ -73,21 +89,87 @@ public partial class PlayersController : MonoBehaviour
 
     private void Animation()
     {
-        // Check for player input (e.g., pressing the "W" key)
-        bool isRunningFwd = Input.GetKey(KeyCode.W) || Input.GetAxis("ControllerHorizontal") > 0f;
+        //BEGINNING OF NO WEAPON ANIMATIONS!!!
 
-        // Set the "IsRunningFwd" parameter in the Animator Controller
-        animator.SetBool("IsRunningFwd", isRunningFwd);
+        if(runLayerWeight == 1f)
+        {
+            
+            // Check for player input (e.g., pressing the "W" key)
+            bool isRunningFwd = Input.GetKey(KeyCode.W) || Input.GetAxis("ControllerHorizontal") > 0f;
+
+            // Set the "IsRunningFwd" parameter in the Animator Controller
+            animator.SetBool("NoWeaponRunningFwd", isRunningFwd);
+
+            bool isRunningLeft = Input.GetKey(KeyCode.A);
+            animator.SetBool("NoWeaponRunLeft", isRunningLeft);
+            
+
+            bool isRunningRight = Input.GetKey(KeyCode.D);
+            animator.SetBool("NoWeaponRunRight", isRunningRight);
+
+            if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A))
+            {
+                animator.SetBool("NoWeaponRunLeft", false);
+                animator.SetBool("NoWeaponRunningFwd", false);
+                animator.SetBool("NoWeaponStrafeLeft", true);
+            }
+            else
+            {
+                animator.SetBool("NoWeaponStrafeLeft", false);
+            }
 
 
+            if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
+            {
+                animator.SetBool("NoWeaponRunningFwd", false);
+                animator.SetBool("NoWeaponRunRight", false);
+                animator.SetBool("NoWeaponStrafeRight", true);
+                
+            }
+            else
+            {
+                animator.SetBool("NoWeaponStrafeRight", false);
+            }
 
-        // Check for player input (e.g., pressing the "D" key)
-        bool RunBack = Input.GetKey(KeyCode.S) || Input.GetAxis("ControllerHorizontal") < 0f;
+            
+            // Check for player input (e.g., pressing the "D" key)
+            bool RunBack = Input.GetKey(KeyCode.S) || Input.GetAxis("ControllerHorizontal") < 0f;
 
-        // Set the "IsRunning" parameter in the Animator Controller
-        animator.SetBool("RunBack", RunBack);
+            // Set the "IsRunning" parameter in the Animator Controller
+            animator.SetBool("NoWeaponRunBack", RunBack);
 
+            if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A))
+            {
+                animator.SetBool("NoWeaponRunBack", false);
+                animator.SetBool("NoWeaponRunLeft", false);
+                animator.SetBool("NoWeaponRunBwdLeft", true);
+            }
+            else
+            {
+                animator.SetBool("NoWeaponRunBwdLeft", false);
+            }
 
-        
+            if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D))
+            {
+                animator.SetBool("NoWeaponRunBack", false);
+                animator.SetBool("NoWeaponRunRight", false);
+                animator.SetBool("NoWeaponRunBwdRight", true);
+            }
+            else
+            {
+                animator.SetBool("NoWeaponRunBwdRight", false);
+            }
+
+        }
+        else
+        {
+            bool isWalkingFwd = Input.GetKey(KeyCode.W);
+            animator.SetBool("IsWalkingFwd", isWalkingFwd);
+
+            bool isWalkingBwd = Input.GetKey(KeyCode.S);
+            animator.SetBool("IsWalkingBwd", isWalkingBwd);
+        }
+
+        //END OF NO WEAPON ANIMATIONS.
     }
 }
