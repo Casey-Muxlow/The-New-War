@@ -1,6 +1,7 @@
 #if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.ShortcutManagement;
@@ -174,6 +175,9 @@ namespace VHierarchy
 
                     if (hasLeftGradient)
                         colorRect = colorRect.AddWidthFromRight(3);
+
+                    if (PrefabUtility.HasPrefabInstanceAnyOverrides(go, false) && !hasLeftGradient)
+                        colorRect = colorRect.AddWidthFromRight(EditorGUIUtility.pixelsPerPoint >= 2 ? -2.5f : -3);
 
 
 
@@ -771,14 +775,30 @@ namespace VHierarchy
             if (!curEvent.isKeyDown) return;
             if (curEvent.keyCode == KeyCode.None) return;
 
+
+            void updateHierarchyWindow()
+            {
+                if (hierarchyWindow == EditorWindow.mouseOverWindow) return;
+
+                _hierarchyWindow = EditorWindow.mouseOverWindow;
+
+                UpdateExpandedIdsList();
+
+            }
+
             void toggleExpanded()
             {
                 if (!hoveredGo) return;
                 if (curEvent.holdingAnyModifierKey) return;
                 if (!curEvent.isKeyDown || curEvent.keyCode != KeyCode.E) return;
+                if (Tools.viewTool == ViewTool.FPS) return;
                 if (!VHierarchyMenu.toggleExpandedEnabled) return;
 
                 curEvent.Use();
+
+                if (transformToolNeedsReset = Application.unityVersion.Contains("2022"))
+                    previousTransformTool = Tools.current;
+
 
                 if (hoveredGo.transform.childCount == 0) return;
 
@@ -793,6 +813,7 @@ namespace VHierarchy
                 if (curEvent.isNull) return;    // tocheck 
                 if (curEvent.holdingAnyModifierKey) return;
                 if (!curEvent.isKeyDown || curEvent.keyCode != KeyCode.A) return;
+                if (Tools.viewTool == ViewTool.FPS) return;
                 if (!VHierarchyMenu.toggleActiveEnabled) return;
 
                 var gos = Selection.gameObjects.Contains(hoveredGo) ? Selection.gameObjects : new[] { hoveredGo };
@@ -899,6 +920,9 @@ namespace VHierarchy
 
             }
 
+
+            updateHierarchyWindow();
+
             toggleExpanded();
             toggleActive();
             delete();
@@ -944,8 +968,7 @@ namespace VHierarchy
 
         static void UpdateExpandedIdsList() // delayCall loop
         {
-            if (!Application.isPlaying)
-                expandedIds = hierarchyWindow?.GetFieldValue("m_SceneHierarchy").GetFieldValue("m_TreeViewState").GetPropertyValue<List<int>>("expandedIDs") ?? new List<int>();
+            expandedIds = hierarchyWindow?.GetFieldValue("m_SceneHierarchy")?.GetFieldValue("m_TreeViewState")?.GetPropertyValue<List<int>>("expandedIDs") ?? new List<int>();
 
             EditorApplication.delayCall -= UpdateExpandedIdsList;
             EditorApplication.delayCall += UpdateExpandedIdsList;
@@ -1069,7 +1092,7 @@ namespace VHierarchy
                     if (currentSceneGuid != originalSceneGuid) return;
 
 
-                    var curInstanceIdsHash = go.scene.GetHashCode();
+                    var curInstanceIdsHash = go.scene.GetRootGameObjects().FirstOrDefault()?.GetInstanceID() ?? 0;
                     var curGlobalIdsHash = sceneData.goDatas_byGlobalId.Keys.Aggregate(0, (hash, r) => hash ^= r.GetHashCode());
 
                     if (sceneIdMap.instanceIdsHash == curInstanceIdsHash && sceneIdMap.globalIdsHash == curGlobalIdsHash) return;
@@ -1285,43 +1308,6 @@ namespace VHierarchy
 
 
 
-        static void RemoveIdMapsForUnloadedScenes()
-        {
-            var scenes = Enumerable.Range(0, EditorSceneManager.sceneCount).Select(i => EditorSceneManager.GetSceneAt(i));
-
-
-            if (prevLoadedScenes.Any()) // avoid clearing all maps after domain reload
-                foreach (var scene in scenes)
-                    if (scene.isLoaded && !prevLoadedScenes.Contains(scene))
-                        cache.sceneIdMaps_bySceneGuid.Remove(scene.path.ToGuid());
-
-
-
-            prevLoadedScenes.Clear();
-
-            foreach (var scene in scenes)
-                if (scene.isLoaded)
-                    prevLoadedScenes.Add(scene);
-
-
-
-            EditorApplication.delayCall += RemoveIdMapsForUnloadedScenes;
-
-
-
-            // if an additive scene is unloaded but not removed (eg rightclick -> unload) - it will keep the same hash when reloaded
-            // and its objects will have new iids, so their SceneIdMap will become outdated
-            // but this map won't get updated in GetGoData because scene hash haven't changed
-            // this function removes outdated SceneIdMaps in such cases
-
-        }
-
-        static List<Scene> prevLoadedScenes = new List<Scene>();
-
-
-
-
-
 
 
         static Texture2D GetIcon_forVTabs(GameObject gameObject)
@@ -1374,6 +1360,88 @@ namespace VHierarchy
 
 
 
+        static void SetPreviousTransformTool()
+        {
+            if (!transformToolNeedsReset) return;
+
+            Tools.current = previousTransformTool;
+
+            transformToolNeedsReset = false;
+
+            // E shortcut changes transform tool in 2022
+            // here we undo this
+
+        }
+
+        static bool transformToolNeedsReset;
+        static Tool previousTransformTool;
+
+
+
+
+
+
+
+        static void DuplicateSceneData(string originalSceneGuid, string duplicatedSceneGuid)
+        {
+            var originalSceneData = data.sceneDatas_byGuid[originalSceneGuid];
+            var duplicatedSceneData = data.sceneDatas_byGuid[duplicatedSceneGuid] = new SceneData();
+
+            foreach (var kvp in originalSceneData.goDatas_byGlobalId)
+            {
+                var duplicatedGlobalId = new GlobalID(kvp.Key.ToString().Replace(originalSceneGuid, duplicatedSceneGuid));
+                var duplicatedGoData = new GameObjectData() { colorIndex = kvp.Value.colorIndex, iconNameOrGuid = kvp.Value.iconNameOrGuid };
+
+                duplicatedSceneData.goDatas_byGlobalId[duplicatedGlobalId] = duplicatedGoData;
+
+            }
+
+        }
+
+        static void OnSceneImported(string importedScenePath)
+        {
+            if (curEvent.commandName != "Duplicate" && curEvent.commandName != "Paste") return;
+
+
+            var copiedAssets_paths = new List<string>();
+
+            var assetClipboard = typeof(Editor).Assembly.GetType("UnityEditor.AssetClipboardUtility").GetMemberValue("assetClipboard").InvokeMethod<IEnumerator>("GetEnumerator");
+
+            while (assetClipboard.MoveNext())
+                copiedAssets_paths.Add(assetClipboard.Current.GetMemberValue<GUID>("guid").ToString().ToPath());
+
+
+
+            var originalScenePath = copiedAssets_paths.FirstOrDefault(r => File.Exists(r) && new FileInfo(r).Length
+                                                                                          == new FileInfo(importedScenePath).Length);
+            var originalSceneGuid = originalScenePath.ToGuid();
+            var duplicatedSceneGuid = importedScenePath.ToGuid();
+
+            if (!data.sceneDatas_byGuid.ContainsKey(originalSceneGuid)) return;
+            if (data.sceneDatas_byGuid.ContainsKey(duplicatedSceneGuid)) return;
+
+            DuplicateSceneData(originalSceneGuid, duplicatedSceneGuid);
+
+        }
+
+        class SceneImportDetector : AssetPostprocessor
+        {
+            // scene data duplication won't work on earlier versions anyway
+#if UNITY_2021_2_OR_NEWER 
+            static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths, bool didDomainReload)
+            {
+                if (!data) return;
+
+                foreach (var r in importedAssets)
+                    if (r.EndsWith(".unity"))
+                        OnSceneImported(r);
+
+            }
+#endif
+        }
+
+
+
 
 
 
@@ -1391,8 +1459,8 @@ namespace VHierarchy
                 EditorApplication.update -= RepaintOnAlt;
                 EditorApplication.update += RepaintOnAlt;
 
-                EditorApplication.delayCall -= RemoveIdMapsForUnloadedScenes;
-                EditorApplication.delayCall += RemoveIdMapsForUnloadedScenes;
+                EditorApplication.update -= SetPreviousTransformTool;
+                EditorApplication.update += SetPreviousTransformTool;
 
                 var globalEventHandler = typeof(EditorApplication).GetFieldValue<EditorApplication.CallbackFunction>("globalEventHandler");
                 typeof(EditorApplication).SetFieldValue("globalEventHandler", CheckShortcuts + (globalEventHandler - CheckShortcuts));
@@ -1721,7 +1789,7 @@ namespace VHierarchy
 
 
 
-        public const string version = "2.0.9";
+        public const string version = "2.0.14";
 
     }
 }

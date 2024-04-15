@@ -24,6 +24,8 @@ public partial class PlayersController : MonoBehaviour
     private Vector3 verticalVelocity;
     private float runLayerWeight = 0f;
 
+    public bool IsDead = false;
+
     private void Start()
     {
         mainCamera = GetComponentInChildren<Camera>();
@@ -113,6 +115,14 @@ public partial class PlayersController : MonoBehaviour
 
             bool isRunningRight = Input.GetKey(KeyCode.D);
             animator.SetBool("NoWeaponRunRight", isRunningRight);
+            if(isRunningRight)
+            {
+                speedCombined *= 3f;
+            }
+            if(!isRunningRight)
+            {
+                speedCombined /= 3f;
+            }
 
             if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A))
             {
@@ -177,8 +187,17 @@ public partial class PlayersController : MonoBehaviour
 
             bool isWalkingBwd = Input.GetKey(KeyCode.S);
             animator.SetBool("IsWalkingBwd", isWalkingBwd);
+
+            bool isWalkingRight = Input.GetKey(KeyCode.D);
+            animator.SetBool("IsWalkingRight", isWalkingRight);
+
+            bool isWalkingLeft = Input.GetKey(KeyCode.A);
+            animator.SetBool("IsWalkingLeft", isWalkingLeft);
         }
 
         //END OF NO WEAPON ANIMATIONS.
+
+
+
     }
 }
