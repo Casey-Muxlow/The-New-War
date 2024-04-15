@@ -8,13 +8,12 @@ public partial class PlayersController : MonoBehaviour
    
 
     [SerializeField] public float mouseSensitivity = 5f;
-    [SerializeField] public float jumpSpeed = 10f;
+    [SerializeField] public float jumpHeight = 10f;
 
     [SerializeField] private float rotationLeftRight;
     [SerializeField] private float verticalRotation;
     [SerializeField] private float forwardspeed;
     [SerializeField] private float sideSpeed;
-    [SerializeField] private float verticalVelocity;
     [SerializeField] private Vector3 speedCombined;
     [SerializeField] private CharacterController playerController;
 
@@ -22,6 +21,7 @@ public partial class PlayersController : MonoBehaviour
 
     [SerializeField] private Animator animator;
 
+    private Vector3 verticalVelocity;
     private float runLayerWeight = 0f;
 
     private void Start()
@@ -70,9 +70,9 @@ public partial class PlayersController : MonoBehaviour
 
         animator.SetLayerWeight(animator.GetLayerIndex("Run Layer"), runLayerWeight);
 
-        verticalVelocity += Physics.gravity.y * Time.deltaTime;
+        verticalVelocity.y += Physics.gravity.y * Time.deltaTime;
 
-        speedCombined = new Vector3(sideSpeed, verticalVelocity, forwardspeed);
+        speedCombined = new Vector3(sideSpeed, verticalVelocity.y, forwardspeed);
 
         speedCombined = transform.rotation * speedCombined;
 
@@ -83,7 +83,7 @@ public partial class PlayersController : MonoBehaviour
     {
         if (playerController.isGrounded && Input.GetButtonDown("Jump"))
         {
-            verticalVelocity = jumpSpeed;
+            verticalVelocity.y = jumpHeight;
         }
     }
 
@@ -102,7 +102,14 @@ public partial class PlayersController : MonoBehaviour
 
             bool isRunningLeft = Input.GetKey(KeyCode.A);
             animator.SetBool("NoWeaponRunLeft", isRunningLeft);
-            
+            if(isRunningLeft)
+            {
+                speedCombined *= 3f;
+            }
+            if(!isRunningLeft)
+            {
+                speedCombined /= 3f;
+            }
 
             bool isRunningRight = Input.GetKey(KeyCode.D);
             animator.SetBool("NoWeaponRunRight", isRunningRight);
@@ -112,10 +119,12 @@ public partial class PlayersController : MonoBehaviour
                 animator.SetBool("NoWeaponRunLeft", false);
                 animator.SetBool("NoWeaponRunningFwd", false);
                 animator.SetBool("NoWeaponStrafeLeft", true);
+                
             }
             else
             {
                 animator.SetBool("NoWeaponStrafeLeft", false);
+                
             }
 
 
