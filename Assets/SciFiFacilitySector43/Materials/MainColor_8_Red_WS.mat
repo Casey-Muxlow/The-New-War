@@ -155,7 +155,7 @@ Material:
     - _MainColor: {r: 0.99215686, g: 0.28941715, b: 0.2588235, a: 0}
     - _TintColor: {r: 0.965, g: 0.18871112, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &2910513172193251151
+--- !u!114 &2732521925442567199
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
