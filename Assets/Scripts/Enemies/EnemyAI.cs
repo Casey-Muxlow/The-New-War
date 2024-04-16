@@ -45,6 +45,7 @@ public class EnemyAI : MonoBehaviour
     private bool TookDmg;
     private bool ChasingPlayer;
     public float notifyRadius = 25f;
+    private bool NotifyOthers = false;
     
 
     private PlayersController playersController;
@@ -76,6 +77,7 @@ public class EnemyAI : MonoBehaviour
             isShooting = false;
             TookDmg = false;
             ChasingPlayer = false;
+            NotifyOthers = false;
         }
         if (agent.isActiveAndEnabled)
         {
@@ -86,7 +88,7 @@ public class EnemyAI : MonoBehaviour
             {
                 StartCoroutine(roam());
             }
-            if (TookDmg && ChasingPlayer && playersController.IsDead)
+            if ((TookDmg || ChasingPlayer) && !playersController.IsDead)
             {
 
                 StartCoroutine(PlayerLocation());
@@ -104,7 +106,7 @@ public class EnemyAI : MonoBehaviour
     // If the enemy took damage and it does not see the player it looks for the player
     bool SearchforPlayer()
     {
-        if (TookDmg)
+        if (TookDmg || NotifyOthers)
         {
 
             agent.SetDestination(playersController.transform.position);
@@ -126,6 +128,7 @@ public class EnemyAI : MonoBehaviour
         }
         TookDmg = false;
         ChasingPlayer = false;
+        NotifyOthers = false;
     }
 
 
@@ -141,6 +144,7 @@ public class EnemyAI : MonoBehaviour
         }
         TookDmg = false;
         ChasingPlayer = false;
+        NotifyOthers = false;
     }
 
     void NotifyNearbyEnemies()
@@ -155,6 +159,7 @@ public class EnemyAI : MonoBehaviour
                 if (nearbyEnemy != null)
                 {
                     nearbyEnemy.StartChasing();
+                    
                 }
             }
         }
@@ -164,6 +169,7 @@ public class EnemyAI : MonoBehaviour
     {
         StopCoroutine(roam());
         ChasingPlayer = true;
+        NotifyOthers = true;
         if (!PlayerInRange || PlayerInRange)
         {
             StartCoroutine(AttackLocation());
