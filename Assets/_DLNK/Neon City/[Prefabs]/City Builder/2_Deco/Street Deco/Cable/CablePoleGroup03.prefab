@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3936788560139139794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7242473943397406555}
+  m_Layer: 0
+  m_Name: CablePoleGroup03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7242473943397406555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3936788560139139794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5303064521129729803}
+  - {fileID: 3207040533727448675}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1786413142929501906
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7242473943397406555}
+    m_Modifications:
+    - target: {fileID: 5859983955558461913, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859983955558461913, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859983955558461913, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859983955558461913, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859983955558461913, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859983955558461913, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859983955558461913, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859983955558461913, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859983955558461913, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859983955558461913, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859983955558461913, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859983955558461914, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+      propertyPath: m_Name
+      value: CablePole01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+--- !u!4 &5303064521129729803 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5859983955558461913, guid: 6aea4fc28c90cce4a87f5f028444ad43, type: 3}
+  m_PrefabInstance: {fileID: 1786413142929501906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8641254014448232934
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7242473943397406555}
+    m_Modifications:
+    - target: {fileID: 6587170732877309829, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587170732877309829, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587170732877309829, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587170732877309829, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.277
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587170732877309829, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.536
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587170732877309829, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587170732877309829, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587170732877309829, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587170732877309829, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587170732877309829, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587170732877309829, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587170732877309829, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949162914158657860, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+      propertyPath: m_Name
+      value: CableBunch04
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+--- !u!4 &3207040533727448675 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6587170732877309829, guid: d7458c06049b8164aa392898b013eb44, type: 3}
+  m_PrefabInstance: {fileID: 8641254014448232934}
+  m_PrefabAsset: {fileID: 0}

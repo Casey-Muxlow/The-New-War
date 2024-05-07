@@ -1,0 +1,24 @@
+newmtl PavementDirtTiles00b
+map_Kd -o 0 0 -s 2 2 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Tiles/PavementTilesDirt00/PavementTilesDirt00_Albedo.png
+map_Pm -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Tiles/PavementTilesDirt00/PavementTilesDirt00_Metallic.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Tiles/PavementTilesDirt00/PavementTilesDirt00_Normal.png
+disp -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Tiles/PavementTilesDirt00/PavementTilesDirt00_Height.png
+Kd 1 1 1
+d 1
+
+newmtl BrickDamaged00b
+map_Kd -o 0 0 -s 4 4 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Bricks/BrickDamaged00/BrickDamaged00_Albedo.png
+map_Pm -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Bricks/BrickDamaged00/BrickDamaged00_Metallic.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Bricks/BrickDamaged00/BrickDamaged00_Normal.png
+disp -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Bricks/BrickDamaged00/BrickDamaged00_Height.png
+Kd 1 1 1
+d 1
+
+newmtl PlasterPannelsDirt00
+map_Kd -o 0 0 -s 8 8 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterPannelsDirt00/PlasterPannelsDirt00_Albedo.png
+map_Pm -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterPannelsDirt00/PlasterPannelsDirt00_Metallic.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterPannelsDirt00/PlasterPannelsDirt00_Normal.png
+disp -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterPannelsDirt00/PlasterPannelsDirt00_Height.png
+Kd 1 1 1
+d 1
+

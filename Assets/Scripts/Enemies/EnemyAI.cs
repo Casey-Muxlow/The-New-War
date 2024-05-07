@@ -18,7 +18,6 @@ public class EnemyAI : MonoBehaviour
     [Header("----- Enemy Stat -----")]
     [SerializeField] int HP;
     [SerializeField] int viewCone;
-    [SerializeField] int speed;
     [SerializeField] int roamDist;
     [SerializeField] int roamPauseTime;
     [SerializeField] float animSpeedTrans;
@@ -88,7 +87,7 @@ public class EnemyAI : MonoBehaviour
             {
                 StartCoroutine(roam());
             }
-            if ((TookDmg || ChasingPlayer) && !playersController.IsDead)
+            if (TookDmg && ChasingPlayer && !playersController.IsDead)
             {
 
                 StartCoroutine(PlayerLocation());
@@ -180,18 +179,21 @@ public class EnemyAI : MonoBehaviour
     {
         if (agent.remainingDistance < 0.5 && !destinationChosen)
         {
-            destinationChosen = true;
-            agent.stoppingDistance = 0;
-            yield return new WaitForSeconds(roamPauseTime);
+            if (agent.remainingDistance < 0.5 && !destinationChosen)
+            {
+                destinationChosen = true;
+                agent.stoppingDistance = 0;
+                yield return new WaitForSeconds(roamPauseTime);
 
-            Vector3 randomPos = Random.insideUnitSphere * roamDist;
-            randomPos += startingPos;
+                Vector3 randomPos = Random.insideUnitSphere * roamDist;
+                randomPos += startingPos;
 
-            NavMeshHit hit;
-            NavMesh.SamplePosition(randomPos, out hit, roamDist, 1);
-            agent.SetDestination(hit.position);
+                NavMeshHit hit;
+                NavMesh.SamplePosition(randomPos, out hit, roamDist, 1);
+                agent.SetDestination(hit.position);
 
-            destinationChosen = false;
+                destinationChosen = false;
+            }
         }
     }
 
@@ -303,7 +305,7 @@ public class EnemyAI : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerInRange = false;
-            agent.stoppingDistance = 0;
+            
             isShooting = false;
         }
     }

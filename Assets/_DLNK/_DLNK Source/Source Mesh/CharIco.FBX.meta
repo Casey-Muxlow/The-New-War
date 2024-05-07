@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 5c01c791ea6f64f47975beb04337fd2c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Arm
+    100004: Arm001
+    100006: Body
+    100008: Details
+    100010: Eye
+    100012: Hand002
+    100014: Hand01
+    100016: Palm
+    100018: Palm001
+    100020: Shoulder
+    100022: Shoulder001
+    100024: Fire
+    400000: //RootNode
+    400002: Arm
+    400004: Arm001
+    400006: Body
+    400008: Details
+    400010: Eye
+    400012: Hand002
+    400014: Hand01
+    400016: Palm
+    400018: Palm001
+    400020: Shoulder
+    400022: Shoulder001
+    400024: Fire
+    2100000: 'Material #25'
+    2100002: 'Material #27'
+    2100004: 'Material #28'
+    2100006: 'Material #26'
+    2100008: 'Material #41'
+    2100010: 'Material #88'
+    2100012: 'Material #29'
+    2300000: Arm
+    2300002: Arm001
+    2300004: Body
+    2300006: Details
+    2300008: Eye
+    2300010: Hand002
+    2300012: Hand01
+    2300014: Palm
+    2300016: Palm001
+    2300018: Shoulder
+    2300020: Shoulder001
+    2300022: Fire
+    3300000: Arm
+    3300002: Arm001
+    3300004: Body
+    3300006: Details
+    3300008: Eye
+    3300010: Hand002
+    3300012: Hand01
+    3300014: Palm
+    3300016: Palm001
+    3300018: Shoulder
+    3300020: Shoulder001
+    3300022: Fire
+    4300000: Body
+    4300002: Shoulder001
+    4300004: Arm001
+    4300006: Palm001
+    4300008: Hand002
+    4300010: Shoulder
+    4300012: Arm
+    4300014: Palm
+    4300016: Hand01
+    4300018: Eye
+    4300020: Details
+    4300022: Fire
+    7400000: Idle
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #25'
+    second: {fileID: 2100000, guid: 97ab926cf3a6f234fa97e22fd6a57a92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #26'
+    second: {fileID: 2100000, guid: 2876afc9dc23b20469c7846379d63b24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #27'
+    second: {fileID: 2100000, guid: dddae3552c60d0a41b61dc7fad5a0db1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #28'
+    second: {fileID: 2100000, guid: 86238c91196d60a49835c01750545b1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #29'
+    second: {fileID: 2100000, guid: 7fd6d8234d5b8da419d8cb2f4312274c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #41'
+    second: {fileID: 2100000, guid: 500148fa945f2984db0b5e986752eb40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #88'
+    second: {fileID: 2100000, guid: d724443a931e183469cec779a8ca650e, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.02
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

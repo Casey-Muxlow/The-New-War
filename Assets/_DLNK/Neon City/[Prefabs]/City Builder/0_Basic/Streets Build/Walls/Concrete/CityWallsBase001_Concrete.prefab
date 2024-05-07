@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5789540717002715274
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1496619497, guid: 3c03521972a815b408a6d570932141fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 16404045930276421, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c60b4e3fb5db7f4eb20d437d144a78e, type: 2}
+    - target: {fileID: 1833807942751895516, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_Name
+      value: CityWallsBase001_Concrete
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833807942751895516, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450530911478668562, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836676905120725223, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836676905120725223, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836676905120725223, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836676905120725223, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836676905120725223, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836676905120725223, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836676905120725223, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836676905120725223, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836676905120725223, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836676905120725223, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836676905120725223, guid: 3c03521972a815b408a6d570932141fd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3c03521972a815b408a6d570932141fd, type: 3}

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e808a0d9bf396784d82b0913155f86cb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - PlayerChar: {instanceID: 0}
+  - ZTriggerMat: {fileID: 2100000, guid: d5e14df18baf8fe45aee810845d1e559, type: 2}
+  - ActiveMat: {fileID: 2100000, guid: 88ca6c9aceb08b245a0e436775de610d, type: 2}
+  - CeilingShadow: {fileID: 2100000, guid: 6c6eda8f56f8975479e45f8e98b2b624, type: 2}
+  - ActiveZone: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3242985132558414276
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1098212173933658, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510649402013882, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+      propertyPath: m_Name
+      value: Lighting_Deco002d_lgt
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579091689368972, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579091689368972, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579091689368972, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579091689368972, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579091689368972, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579091689368972, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579091689368972, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579091689368972, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579091689368972, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579091689368972, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579091689368972, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108711698021863148, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 108711698021863148, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab,
+        type: 3}
+      propertyPath: m_Shadows.m_Bias
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 108711698021863148, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab,
+        type: 3}
+      propertyPath: m_Shadows.m_NormalBias
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222311526811981066, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab, type: 3}
+--- !u!1 &3243856489736588512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1437618619039012, guid: 7a89e0ad1abbcd844a9ae20eff24d4ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 3242985132558414276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3327727660947848684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3243856489736588512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}

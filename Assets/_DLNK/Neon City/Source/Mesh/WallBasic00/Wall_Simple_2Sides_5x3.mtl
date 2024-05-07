@@ -1,0 +1,31 @@
+newmtl Concrete01
+map_Kd -o 0 0 -s 4 4 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Concrete/Concrete00/Concrete00.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Concrete/Concrete01/Concrete01_NORM.png
+disp -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Concrete/Concrete01/Concrete01_DISP.png
+Kd 0.5471698 0.5471698 0.5471698
+d 1
+
+newmtl PlasterPannelsDirt00
+map_Kd -o 0 0 -s 8 8 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterPannelsDirt00/PlasterPannelsDirt00_Albedo.png
+map_Pm -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterPannelsDirt00/PlasterPannelsDirt00_Metallic.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterPannelsDirt00/PlasterPannelsDirt00_Normal.png
+disp -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterPannelsDirt00/PlasterPannelsDirt00_Height.png
+Kd 1 1 1
+d 1
+
+newmtl ConcretePannelsPerforated00
+map_Kd -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Concrete/CocretePannelsPerforated00/CocretePannelsPerforated00_Albedo.png
+map_Pm -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Concrete/CocretePannelsPerforated00/CocretePannelsPerforated00_Metallic.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Concrete/CocretePannelsPerforated00/CocretePannelsPerforated00_Normal.png
+disp -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Concrete/CocretePannelsPerforated00/CocretePannelsPerforated00_Height.png
+Kd 1 1 1
+d 1
+
+newmtl PlasterDirt00
+map_Kd -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterDirt00/PlasterDirt00_Albedo.png
+map_Pm -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterDirt00/PlasterDirt00_Metallic.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterDirt00/PlasterDirt00_Normal.png
+disp -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterDirt00/PlasterDirt00_Height.png
+Kd 1 1 1
+d 1
+

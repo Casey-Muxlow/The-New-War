@@ -1,0 +1,58 @@
+newmtl PlasterDirt00
+map_Kd -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterDirt00/PlasterDirt00_Albedo.png
+map_Pm -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterDirt00/PlasterDirt00_Metallic.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterDirt00/PlasterDirt00_Normal.png
+disp -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Plaster/PlasterDirt00/PlasterDirt00_Height.png
+Kd 1 1 1
+d 1
+
+newmtl Concrete01
+map_Kd -o 0 0 -s 4 4 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Concrete/Concrete00/Concrete00.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Concrete/Concrete01/Concrete01_NORM.png
+disp -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Concrete/Concrete01/Concrete01_DISP.png
+Kd 0.5471698 0.5471698 0.5471698
+d 1
+
+newmtl Concrete_Lgt_4
+map_Kd -o 0 0 -s 4 4 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Building/Modern/Luminaria/LightWall02/LightWall02.png
+map_Pm -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Building/Modern/Luminaria/LightWall02/LightWall02_spc.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Building/Modern/Luminaria/LightWall02/LightWall02_nrm.png
+disp -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Building/Modern/Luminaria/LightWall02/LightWall02_hgt.png
+map_Ke -o 0 0 -s 4 4 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Building/Modern/Luminaria/LightWall02/LightWall02_em00.png
+map_d -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Building/Modern/Luminaria/LightWall02/LightWall02_msk.png
+Kd 1 1 1
+d 1
+
+newmtl MetalBare01
+map_Kd -o 0 0 -s 5 5 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Basics/Noise02.png
+map_Pm -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Basics/Noise02.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Metal/MetalPaint03/MetalPaint03_NORM.png
+Kd 1 1 1
+d 1
+
+newmtl BrickDamaged00b
+map_Kd -o 0 0 -s 4 4 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Bricks/BrickDamaged00/BrickDamaged00_Albedo.png
+map_Pm -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Bricks/BrickDamaged00/BrickDamaged00_Metallic.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Bricks/BrickDamaged00/BrickDamaged00_Normal.png
+disp -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Materials/Bricks/BrickDamaged00/BrickDamaged00_Height.png
+Kd 1 1 1
+d 1
+
+newmtl MetalBare01_lgt_5
+map_Kd -o 0 0 -s 2 2 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Building/Modern/Luminaria/LightWall01/LightWall01.png
+map_Pm -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Building/Modern/Luminaria/LightWall01/LightWall01_spc.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Building/Modern/Luminaria/LightWall01/LightWall01_nrm.png
+disp -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Building/Modern/Luminaria/LightWall01/LightWall01_hgt.png
+map_Ke -o 0 0 -s 2 2 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Building/Modern/Luminaria/LightWall01/LightWall01_em00.png
+Kd 1 1 1
+d 1
+
+newmtl MetalDotsGrid02
+map_Kd -o 0 0 -s 2 2 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Pannels/Factory/MetalPannel02/MetaPannel2_Msk.png
+map_Pm -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Pannels/Factory/MetalPannel02/MetaPannel2_Msk.png
+bump -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Pannels/Factory/MetalPannel02/MetaPannel2_normals.png
+disp -o 0 0 -s 1 1 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Pannels/Factory/MetalPannel02/MetaPannel2_heights.png
+map_Ke -o 0 0 -s 2 2 D:/_Work In Progress/Unity Projects/ASSETSTORE2023/BuiltIn/ASSET GUID UPDATE 19/Assets/_DLNK/_DLNK Source/_DLNK Libraries/[dlnk Texture Library]/Manmade/Pannels/Factory/MetalPannel02/MetaPannel2_Glw.png
+Kd 0.6320754 0.6320754 0.6320754
+d 1
+

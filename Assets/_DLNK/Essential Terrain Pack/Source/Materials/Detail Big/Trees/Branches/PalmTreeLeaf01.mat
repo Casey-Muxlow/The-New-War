@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PalmTreeLeaf01
+  m_Shader: {fileID: 4800000, guid: 1943d357ba4d6c8438f2b80309da5570, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _USEALPHA_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: fde51168e08b0764d97fd9b2ec122a7a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 2832fd63389170d45acb642c1d1e56e8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 2800000, guid: 49a66ff8c288eda429ba0b7922736851, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OpacityMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SmoothnessMap:
+        m_Texture: {fileID: 2800000, guid: 9da5e1c8ab2c2e848992c81c9a96f6eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WorldNoise:
+        m_Texture: {fileID: 2800000, guid: c3715659aaeb1604090700e84c4054cb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AOPower: 0.5
+    - _AlphaCutoff: 0.5
+    - _AlphaThreshold: 0.5
+    - _AnimIntensity: 2
+    - _BumpScale: 1
+    - _Cutoff: 0.56
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EmissionLM: 0
+    - _EnvironmentReflections: 1
+    - _Fresnel: 1
+    - _Glossiness: 0.841
+    - _InvertAxis: 0
+    - _LenghtAnim: 1.12
+    - _LengthOffset: 0
+    - _LightWrap: 0
+    - _MetalAlphaGloss: 0
+    - _Metallic: 0
+    - _Mode: 1
+    - _MovementAOMask: 1.28
+    - _NoiseScale: 1
+    - _Noisespeed: 1
+    - _NormalScale: 0
+    - _OcclusionStrenght: 1
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _RimPower: 0.17
+    - _Smoothness: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UpDownVelocity: 1
+    - _UseAlpha: 1
+    - _Velocity: 10
+    - _WeightAnim: -0.09
+    - _WeightOffset: 0
+    - _WorldNoiseVelocity: 0.1
+    - _WorldNoiseVelocity_copy: 20.65
+    - _ZWrite: 1
+    - __dirty: 1
+    m_Colors:
+    - _Color: {r: 0.07040922, g: 0.41176468, b: 0.0060553686, a: 1}
+    - _ColorA: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 0}
+    - _ColorB: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 0}
+    - _ColorFade: {r: 0.29346886, g: 0.86764705, b: 0.34494692, a: 1}
+    - _EmissionColor: {r: 1, g: 0.67941177, b: 0.19852942, a: 1}
+    - _LeavesGradientxy: {r: 0, g: 1, b: 0, a: 0}
+    - _MotionValue: {r: 0.3, g: 0.3, b: 0, a: 0}
+    - _RimColor: {r: 0.1397059, g: 1, b: 0.32363078, a: 1}
+    - _node_532: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_BuildTextureStacks: []

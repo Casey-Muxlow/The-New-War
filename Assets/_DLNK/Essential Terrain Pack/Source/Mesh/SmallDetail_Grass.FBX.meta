@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 3fb810eca67cb074db6189283d9f6cf7
+timeCreated: 1438646761
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: ETP_Grass_00
+    100002: ETP_Grass_001
+    100004: ETP_Grass_002
+    100006: ETP_Grass_003
+    100008: GrassPlane001
+    100010: GrassPlane002
+    100012: GrassPlane003
+    100014: GrassPlane004
+    100016: GrassPlane005
+    100018: GrassPlane006
+    100020: GrassPlane007
+    100022: GrassPlane008
+    100024: GrassPlane009
+    100026: GrassPlane010
+    100028: GrassPlane011
+    100030: GrassPlane012
+    100032: GrassPlane013
+    100034: GrassPlane014
+    100036: GrassPlane015
+    100038: //RootNode
+    400000: ETP_Grass_00
+    400002: ETP_Grass_001
+    400004: ETP_Grass_002
+    400006: ETP_Grass_003
+    400008: GrassPlane001
+    400010: GrassPlane002
+    400012: GrassPlane003
+    400014: GrassPlane004
+    400016: GrassPlane005
+    400018: GrassPlane006
+    400020: GrassPlane007
+    400022: GrassPlane008
+    400024: GrassPlane009
+    400026: GrassPlane010
+    400028: GrassPlane011
+    400030: GrassPlane012
+    400032: GrassPlane013
+    400034: GrassPlane014
+    400036: GrassPlane015
+    400038: //RootNode
+    2300000: GrassPlane001
+    2300002: GrassPlane002
+    2300004: GrassPlane003
+    2300006: GrassPlane004
+    2300008: GrassPlane005
+    2300010: GrassPlane006
+    2300012: GrassPlane007
+    2300014: GrassPlane008
+    2300016: GrassPlane009
+    2300018: GrassPlane010
+    2300020: GrassPlane011
+    2300022: GrassPlane012
+    2300024: GrassPlane013
+    2300026: GrassPlane014
+    2300028: GrassPlane015
+    3300000: GrassPlane001
+    3300002: GrassPlane002
+    3300004: GrassPlane003
+    3300006: GrassPlane004
+    3300008: GrassPlane005
+    3300010: GrassPlane006
+    3300012: GrassPlane007
+    3300014: GrassPlane008
+    3300016: GrassPlane009
+    3300018: GrassPlane010
+    3300020: GrassPlane011
+    3300022: GrassPlane012
+    3300024: GrassPlane013
+    3300026: GrassPlane014
+    3300028: GrassPlane015
+    4300000: GrassPlane001
+    4300002: GrassPlane002
+    4300004: GrassPlane003
+    4300006: GrassPlane004
+    4300008: GrassPlane005
+    4300010: GrassPlane006
+    4300012: GrassPlane007
+    4300014: GrassPlane008
+    4300016: GrassPlane009
+    4300018: GrassPlane010
+    4300020: GrassPlane011
+    4300022: GrassPlane012
+    4300024: GrassPlane013
+    4300026: GrassPlane014
+    4300028: GrassPlane015
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

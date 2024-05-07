@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6887373197425875514
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3535264494111573387, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535264494111573387, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535264494111573387, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535264494111573387, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535264494111573387, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535264494111573387, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535264494111573387, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535264494111573387, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535264494111573387, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535264494111573387, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535264494111573387, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198508237120741169, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_Simple_2Sides_0.5x3 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312083921352582819, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4889fba3c95c8a4419008bfbd437c4d1, type: 2}
+    - target: {fileID: 7312083921352582819, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67599524dede4cf4d9e5c159ac7781d0, type: 2}
+    - target: {fileID: 7312083921352582819, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: b6542b18df069444da29905cc8e3dd3d, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d84c59ec52f8f5d47be6d0dae9ef1b6f, type: 3}

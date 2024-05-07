@@ -1,0 +1,256 @@
+fileFormatVersion: 2
+guid: 4206d63bddab28a41b07c56fb1c6ea85
+timeCreated: 1437068434
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BigTerrain01_00
+    100004: BigTerrain02_00
+    100006: Big Terrain01_00
+    100008: Big Terrain01_015
+    100010: Big Terrain01_016
+    100012: Big Terrain01_017
+    100014: Big Terrain01_02
+    100016: Big Terrain01_03
+    100018: Big Terrain01_04
+    100020: Big Terrain01_05
+    100022: Big Terrain01_06
+    100024: Big Terrain01_07
+    100026: Big Terrain01_08
+    100028: Big Terrain01_09
+    100030: Big Terrain01_10
+    100032: Big Terrain01_11
+    100034: Big Terrain01_12
+    100036: Big Terrain01_13
+    100038: Big Terrain01_14
+    100040: BigTerrain01_00 LOD0
+    100042: BigTerrain01_00 LOD1
+    100044: BigTerrain01_00 LOD2
+    100046: BigTerrain02_001
+    100048: BigTerrain02_002
+    100050: BigTerrain02_003
+    100052: BigTerrain02_004
+    100054: BigTerrain02_005
+    100056: BigTerrain02_006
+    100058: BigTerrain02_007
+    100060: BigTerrain02_008
+    100062: BigTerrain02_009
+    400000: //RootNode
+    400002: BigTerrain01_00
+    400004: BigTerrain02_00
+    400006: Big Terrain01_00
+    400008: Big Terrain01_015
+    400010: Big Terrain01_016
+    400012: Big Terrain01_017
+    400014: Big Terrain01_02
+    400016: Big Terrain01_03
+    400018: Big Terrain01_04
+    400020: Big Terrain01_05
+    400022: Big Terrain01_06
+    400024: Big Terrain01_07
+    400026: Big Terrain01_08
+    400028: Big Terrain01_09
+    400030: Big Terrain01_10
+    400032: Big Terrain01_11
+    400034: Big Terrain01_12
+    400036: Big Terrain01_13
+    400038: Big Terrain01_14
+    400040: BigTerrain01_00 LOD0
+    400042: BigTerrain01_00 LOD1
+    400044: BigTerrain01_00 LOD2
+    400046: BigTerrain02_001
+    400048: BigTerrain02_002
+    400050: BigTerrain02_003
+    400052: BigTerrain02_004
+    400054: BigTerrain02_005
+    400056: BigTerrain02_006
+    400058: BigTerrain02_007
+    400060: BigTerrain02_008
+    400062: BigTerrain02_009
+    2300000: BigTerrain01_00
+    2300002: BigTerrain02_00
+    2300004: Big Terrain01_00
+    2300006: Big Terrain01_015
+    2300008: Big Terrain01_016
+    2300010: Big Terrain01_017
+    2300012: Big Terrain01_02
+    2300014: Big Terrain01_03
+    2300016: Big Terrain01_04
+    2300018: Big Terrain01_05
+    2300020: Big Terrain01_06
+    2300022: Big Terrain01_07
+    2300024: Big Terrain01_08
+    2300026: Big Terrain01_09
+    2300028: Big Terrain01_10
+    2300030: Big Terrain01_11
+    2300032: Big Terrain01_12
+    2300034: Big Terrain01_13
+    2300036: Big Terrain01_14
+    2300038: BigTerrain01_00 LOD0
+    2300040: BigTerrain01_00 LOD1
+    2300042: BigTerrain01_00 LOD2
+    2300044: BigTerrain02_001
+    2300046: BigTerrain02_002
+    2300048: BigTerrain02_003
+    2300050: BigTerrain02_004
+    2300052: BigTerrain02_005
+    2300054: BigTerrain02_006
+    2300056: BigTerrain02_007
+    2300058: BigTerrain02_008
+    2300060: BigTerrain02_009
+    3300000: BigTerrain01_00
+    3300002: BigTerrain02_00
+    3300004: Big Terrain01_00
+    3300006: Big Terrain01_015
+    3300008: Big Terrain01_016
+    3300010: Big Terrain01_017
+    3300012: Big Terrain01_02
+    3300014: Big Terrain01_03
+    3300016: Big Terrain01_04
+    3300018: Big Terrain01_05
+    3300020: Big Terrain01_06
+    3300022: Big Terrain01_07
+    3300024: Big Terrain01_08
+    3300026: Big Terrain01_09
+    3300028: Big Terrain01_10
+    3300030: Big Terrain01_11
+    3300032: Big Terrain01_12
+    3300034: Big Terrain01_13
+    3300036: Big Terrain01_14
+    3300038: BigTerrain01_00 LOD0
+    3300040: BigTerrain01_00 LOD1
+    3300042: BigTerrain01_00 LOD2
+    3300044: BigTerrain02_001
+    3300046: BigTerrain02_002
+    3300048: BigTerrain02_003
+    3300050: BigTerrain02_004
+    3300052: BigTerrain02_005
+    3300054: BigTerrain02_006
+    3300056: BigTerrain02_007
+    3300058: BigTerrain02_008
+    3300060: BigTerrain02_009
+    4300000: BigTerrain01_00
+    4300002: BigTerrain02_00
+    4300004: BigTerrain01_00 LOD0
+    4300006: BigTerrain01_00 LOD1
+    4300008: BigTerrain01_00 LOD2
+    4300010: Big Terrain01_12
+    4300012: Big Terrain01_02
+    4300014: Big Terrain01_03
+    4300016: Big Terrain01_04
+    4300018: Big Terrain01_05
+    4300020: Big Terrain01_06
+    4300022: Big Terrain01_00
+    4300024: Big Terrain01_08
+    4300026: Big Terrain01_09
+    4300028: Big Terrain01_10
+    4300030: Big Terrain01_07
+    4300032: Big Terrain01_11
+    4300034: Big Terrain01_13
+    4300036: Big Terrain01_14
+    4300038: Big Terrain01_015
+    4300040: Big Terrain01_016
+    4300042: Big Terrain01_017
+    4300044: BigTerrain02_001
+    4300046: BigTerrain02_002
+    4300048: BigTerrain02_003
+    4300050: BigTerrain02_004
+    4300052: BigTerrain02_005
+    4300054: BigTerrain02_006
+    4300056: BigTerrain02_007
+    4300058: BigTerrain02_008
+    4300060: BigTerrain02_009
+    6400000: Big Terrain01_00
+    6400002: Big Terrain01_015
+    6400004: Big Terrain01_016
+    6400006: Big Terrain01_017
+    6400008: Big Terrain01_02
+    6400010: Big Terrain01_03
+    6400012: Big Terrain01_04
+    6400014: Big Terrain01_05
+    6400016: Big Terrain01_06
+    6400018: Big Terrain01_07
+    6400020: Big Terrain01_08
+    6400022: Big Terrain01_09
+    6400024: Big Terrain01_10
+    6400026: Big Terrain01_11
+    6400028: Big Terrain01_12
+    6400030: Big Terrain01_13
+    6400032: Big Terrain01_14
+    6400034: BigTerrain01_00 LOD0
+    6400036: BigTerrain01_00 LOD1
+    6400038: BigTerrain01_00 LOD2
+    6400040: BigTerrain02_00
+    6400042: BigTerrain02_001
+    6400044: BigTerrain02_002
+    6400046: BigTerrain02_003
+    6400048: BigTerrain02_004
+    6400050: BigTerrain02_005
+    6400052: BigTerrain02_006
+    6400054: BigTerrain02_007
+    6400056: BigTerrain02_008
+    6400058: BigTerrain02_009
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 200
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
