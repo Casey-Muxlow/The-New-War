@@ -313,11 +313,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498868, guid: f18932879bb23b84ca5370b65419ee41, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 79.69777
+      value: 84.46
       objectReference: {fileID: 0}
     - target: {fileID: 498868, guid: f18932879bb23b84ca5370b65419ee41, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 52.764824
+      value: 53.13
       objectReference: {fileID: 0}
     - target: {fileID: 498868, guid: f18932879bb23b84ca5370b65419ee41, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2580,25 +2580,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
-    - target: {fileID: 2644026861165949523, guid: 640ccf8110820f447816beb397431f19, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6130333765989927171, guid: 640ccf8110820f447816beb397431f19, type: 3}
-      propertyPath: movementSpeed
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 7225160039657915934, guid: 640ccf8110820f447816beb397431f19, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.94
       objectReference: {fileID: 0}
     - target: {fileID: 7225160039657915934, guid: 640ccf8110820f447816beb397431f19, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 55.36
+      value: 54.64
       objectReference: {fileID: 0}
     - target: {fileID: 7225160039657915934, guid: 640ccf8110820f447816beb397431f19, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 340.22
+      value: 311.11
       objectReference: {fileID: 0}
     - target: {fileID: 7225160039657915934, guid: 640ccf8110820f447816beb397431f19, type: 3}
       propertyPath: m_LocalRotation.w

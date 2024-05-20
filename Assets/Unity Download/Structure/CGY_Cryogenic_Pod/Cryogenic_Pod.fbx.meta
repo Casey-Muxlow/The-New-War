@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dd8d5ab829c8a6c48aafbfe7a869bb4b
+guid: 941256587b8acda49a9e6698f21bc458
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable:
@@ -7,22 +7,67 @@ ModelImporter:
       1: 100000
     second: //RootNode
   - first:
+      1: 100002
+    second: Cryogenic_Pod_Body
+  - first:
+      1: 100004
+    second: Cryogenic_Pod_Glass
+  - first:
+      1: 100006
+    second: Cryogenic_Pod_Lid
+  - first:
       4: 400000
     second: //RootNode
   - first:
+      4: 400002
+    second: Cryogenic_Pod_Body
+  - first:
+      4: 400004
+    second: Cryogenic_Pod_Glass
+  - first:
+      4: 400006
+    second: Cryogenic_Pod_Lid
+  - first:
       23: 2300000
-    second: //RootNode
+    second: Cryogenic_Pod_Body
+  - first:
+      23: 2300002
+    second: Cryogenic_Pod_Glass
+  - first:
+      23: 2300004
+    second: Cryogenic_Pod_Lid
   - first:
       33: 3300000
-    second: //RootNode
+    second: Cryogenic_Pod_Body
+  - first:
+      33: 3300002
+    second: Cryogenic_Pod_Glass
+  - first:
+      33: 3300004
+    second: Cryogenic_Pod_Lid
   - first:
       43: 4300000
-    second: cabinet
+    second: Cryogenic_Pod_Lid
+  - first:
+      43: 4300002
+    second: Cryogenic_Pod_Glass
+  - first:
+      43: 4300004
+    second: Cryogenic_Pod_Body
+  - first:
+      64: 6400000
+    second: Cryogenic_Pod_Body
+  - first:
+      64: 6400002
+    second: Cryogenic_Pod_Glass
+  - first:
+      64: 6400004
+    second: Cryogenic_Pod_Lid
   externalObjects: {}
   materials:
-    materialImportMode: 1
+    materialImportMode: 0
     materialName: 0
-    materialSearch: 2
+    materialSearch: 1
     materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
@@ -50,14 +95,14 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.7
+    globalScale: 1.5
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 0
     importVisibility: 0
-    importBlendShapes: 1
+    importBlendShapes: 0
     importCameras: 0
     importLights: 0
     nodeNameCollisionStrategy: 0
@@ -93,7 +138,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 0
+  importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human: []
@@ -105,7 +150,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.0069999998
+    globalScale: 0.015
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
