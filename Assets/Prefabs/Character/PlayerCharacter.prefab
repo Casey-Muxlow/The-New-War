@@ -387,7 +387,7 @@ Transform:
   m_GameObject: {fileID: 1540913162685127062}
   serializedVersion: 2
   m_LocalRotation: {x: 0.001285252, y: 0.7071056, z: 0.001285252, w: 0.70710564}
-  m_LocalPosition: {x: -1.3536842e-30, y: 0.010561532, z: 0.967506}
+  m_LocalPosition: {x: -0.05000496, y: -0.65, z: 0.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -791,16 +791,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   mouseSensitivity: 5
-  jumpSpeed: 7
+  jumpHeight: 5
   rotationLeftRight: 0
   verticalRotation: 0
   forwardspeed: 0
   sideSpeed: 0
-  verticalVelocity: 0
   speedCombined: {x: 0, y: 0, z: 0}
   playerController: {fileID: 1193663029036909193}
   mainCamera: {fileID: 57067150966936769}
   animator: {fileID: 2807155924885658199}
+  IsDead: 0
 --- !u!54 &1809848485743808891
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -809,8 +809,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2644026861165949523}
   serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
+  m_Mass: 2
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -1939,7 +1939,7 @@ Transform:
   m_GameObject: {fileID: 5634277042625624344}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.15054512, y: -1.086, z: -0.053618252}
+  m_LocalPosition: {x: 0.0000019073486, y: -1.086, z: -0.64999944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
